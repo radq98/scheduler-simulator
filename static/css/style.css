@@ -1,0 +1,31 @@
+body {
+    background: white url("../images/background.gif") repeat;
+}
+
+.headercontainer {
+    margin-top: 10px;
+}
+
+.maincontainer {
+    background-color: rgba(97, 97, 97, 0.8); 
+}
+
+.aterminal {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.afooter {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.amenu {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(39, 39, 39);
+}
+
+.apanel {
+    background-color: rgb(39, 39, 39);
+}
