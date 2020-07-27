@@ -1,14 +1,75 @@
-{% extends "base.html" %}
-{% block title %}Main{% endblock %}
-{% block head %}
-    {{ super() }}
-    <style type="text/css">
-        .important { color: #336699; }
-    </style>
-{% endblock %}
-{% block content %}
-    <h1>Index</h1>
-    <p class="important">
-      Hello.
-    </p>
+{% extends "base.html" %} {% block title %}Main{% endblock %} {% block head %}
+{{ super() }}
+<style type="text/css">
+  .important {
+    color: #336699;
+  }
+</style>
+{% endblock %} {% block content %}
+<h2>Main panel</h2>
+<div class="row">
+  <div class="col-sm-6">
+    <h5>Test parameters</h5>
+    <form method="POST">
+      <fieldset class="form-group">
+        <div class="row">
+          <legend class="col-form-label col-sm-4 pt-0">Algorythm</legend>
+          <div class="col-sm-8" style="text-align: center;">
+            <select
+              class="form-control"
+              id="form-algorythm"
+              name="form-algorythm"
+              placeholder="Algorythm"
+            >
+              <option>FCFS</option>
+              <option>Round Robin</option>
+              <option>Priority planning</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="form-group row" id="form-all-algorythms-div">
+        <legend class="col-form-label col-sm-4 pt-0">Dataset</legend>
+        <div class="col-sm-8" style="text-align: center;">
+          <select
+            class="form-control"
+            id="form-dataset"
+            name="form-dataset"
+            placeholder="Dataset"
+          >
+            <option>dataset1.json</option>
+            <option>dataset2.json</option>
+            <option>dataset3.json</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group row" id="form-FCFS-div">
+        <label for="test_duration" class="col-sm-4 col-form-label"
+          >Test duration</label
+        >
+        <div class="col-sm-8">
+          <input
+            type="number"
+            class="form-control"
+            id="form-test-duration"
+            name="test_duration"
+            placeholder="Type number in seconds"
+          />
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-sm-12" style="text-align: center;">
+          <button id="start-button" type="button" class="btn btn-primary">
+            Start
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="col-sm-6">
+    <h5>Live results</h5>
+  </div>
+</div>
 {% endblock %}

@@ -1,2 +1,4 @@
-appversion = "0.1"
-footertext = "Radosław Zegadło Wroclaw University of Science 2020"
+{
+    "appversion": "0.1",
+    "footertext": "Rados\u0142aw Zegad\u0142o Wroc\u0142aw University of Science 2020"
+}
