@@ -42,26 +42,37 @@ def results():
     return render_template("results.html", context=context)
 
 
-@app.route("/generator", methods=["POST"])
+@app.route("/generator", methods=["POST", "GET"])
 def generator():
-    form = request.form
-    newDataset = []
-    if form.get("number-of-processes") != None:
-        numberOfProcesses = int(form.get("number-of-processes"))
-        #randomSeed = int(form.get("random-seed"))
-        #randomizePriority = form.get("randomize-priority")
-        for x in range(numberOfProcesses):
-            newDataset.append({
-                "id": x, 
-                "period-time": randint(1,100), 
-                "priority": randint(1,100)
-                })
-    print(newDataset)
-    if newDataset != []:
-        with open("./datasets/tmp.json", "w",) as f:
-            json.dump(newDataset, f, indent=4)
-
-    form = None
+    if request.method == 'POST':
+        newDataset = []
+        form = request.form
+        datasetSettings = {
+            "numberOfProcesses": int(form.get("number-of-processes")),
+            "minimumProcessDuration": int(form.get("minimum-process-duration")),
+            "maximumProcessDuration": int(form.get("maximum-process-duration")),
+            "randomizePriority": bool(form.get("randomize-priority")),
+            "randomSeed": int(form.get("random-seed")),
+            "numberOfPriorityLevels": int(form.get("number-of-priority-levels"))
+        }
+        newDataset.append(datasetSettings)
+        if form.get("number-of-processes") != None:
+            for x in range(datasetSettings.get('numberOfProcesses')):
+                if datasetSettings['randomizePriority']:
+                    priority = randint(1,datasetSettings['numberOfPriorityLevels'])
+                else:
+                    priority = 1
+                newDataset.append({
+                    "PID": x, 
+                    "period-time": randint(datasetSettings['minimumProcessDuration'],datasetSettings['maximumProcessDuration']), 
+                    "priority": priority
+                    })
+        print(newDataset)
+        if newDataset != []:
+            with open("./datasets/tmp.json", "w",) as f:
+                json.dump(newDataset, f, indent=4)
+        form = None
+    
     context = {
         "appversion": appversion,
         "footertext": footertext,
