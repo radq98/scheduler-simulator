@@ -49,6 +49,20 @@
           </div>
         </div>
         <div class="form-group row">
+          <label for="process-dispersion-factor" class="col-sm-4 col-form-label"
+            >Process dispersion factor</label
+          >
+          <div class="col-sm-8">
+            <input
+              type="number"
+              class="form-control"
+              id="form-process-dispersion-factor"
+              name="process-dispersion-factor"
+              placeholder="Type percentages"
+            />
+          </div>
+        </div>
+        <div class="form-group row">
           <label for="randomize-priority" class="col-sm-4 col-form-label"
             >Randomize priorities</label
           >
@@ -93,11 +107,7 @@
 
       <div class="form-group row">
         <div class="col-sm-12" style="text-align: center;">
-          <button
-            id="generate-button"
-            type="submit"
-            class="btn btn-primary"
-          >
+          <button id="generate-button" type="submit" class="btn btn-primary">
             Generate
           </button>
           <button
@@ -114,6 +124,13 @@
   </div>
   <div class="col-sm-6">
     <h5>Datasets list</h5>
+    <div class="row">
+      <div class="col-sm-12">
+        {% for dataset in context.datasetsBase %}
+        <li>{{ dataset }}</li>
+        {% endfor %}
+      </div>
+    </div>
   </div>
 </div>
 {% endblock %}

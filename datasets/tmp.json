@@ -1,260 +1,613 @@
-[
-    {
-        "numberOfProcesses": 50,
-        "minimumProcessDuration": 150,
-        "maximumProcessDuration": 800,
-        "randomizePriority": true,
-        "randomSeed": 5,
-        "numberOfPriorityLevels": 15
+{
+    "settings": {
+        "numberOfProcesses": 100,
+        "minimumProcessDuration": 1,
+        "maximumProcessDuration": 15,
+        "processDispersionFactor": 15,
+        "randomizePriority": false,
+        "randomSeed": 15,
+        "numberOfPriorityLevels": 5
     },
-    {
-        "PID": 0,
-        "period-time": 568,
-        "priority": 8
-    },
-    {
-        "PID": 1,
-        "period-time": 785,
-        "priority": 15
-    },
-    {
-        "PID": 2,
-        "period-time": 434,
-        "priority": 9
-    },
-    {
-        "PID": 3,
-        "period-time": 176,
-        "priority": 14
-    },
-    {
-        "PID": 4,
-        "period-time": 337,
-        "priority": 1
-    },
-    {
-        "PID": 5,
-        "period-time": 158,
-        "priority": 14
-    },
-    {
-        "PID": 6,
-        "period-time": 200,
-        "priority": 14
-    },
-    {
-        "PID": 7,
-        "period-time": 209,
-        "priority": 3
-    },
-    {
-        "PID": 8,
-        "period-time": 699,
-        "priority": 15
-    },
-    {
-        "PID": 9,
-        "period-time": 370,
-        "priority": 6
-    },
-    {
-        "PID": 10,
-        "period-time": 582,
-        "priority": 5
-    },
-    {
-        "PID": 11,
-        "period-time": 405,
-        "priority": 13
-    },
-    {
-        "PID": 12,
-        "period-time": 287,
-        "priority": 1
-    },
-    {
-        "PID": 13,
-        "period-time": 484,
-        "priority": 14
-    },
-    {
-        "PID": 14,
-        "period-time": 578,
-        "priority": 7
-    },
-    {
-        "PID": 15,
-        "period-time": 599,
-        "priority": 3
-    },
-    {
-        "PID": 16,
-        "period-time": 701,
-        "priority": 6
-    },
-    {
-        "PID": 17,
-        "period-time": 396,
-        "priority": 4
-    },
-    {
-        "PID": 18,
-        "period-time": 416,
-        "priority": 6
-    },
-    {
-        "PID": 19,
-        "period-time": 297,
-        "priority": 1
-    },
-    {
-        "PID": 20,
-        "period-time": 158,
-        "priority": 13
-    },
-    {
-        "PID": 21,
-        "period-time": 207,
-        "priority": 6
-    },
-    {
-        "PID": 22,
-        "period-time": 655,
-        "priority": 15
-    },
-    {
-        "PID": 23,
-        "period-time": 585,
-        "priority": 11
-    },
-    {
-        "PID": 24,
-        "period-time": 280,
-        "priority": 6
-    },
-    {
-        "PID": 25,
-        "period-time": 708,
-        "priority": 3
-    },
-    {
-        "PID": 26,
-        "period-time": 594,
-        "priority": 7
-    },
-    {
-        "PID": 27,
-        "period-time": 354,
-        "priority": 3
-    },
-    {
-        "PID": 28,
-        "period-time": 415,
-        "priority": 13
-    },
-    {
-        "PID": 29,
-        "period-time": 427,
-        "priority": 12
-    },
-    {
-        "PID": 30,
-        "period-time": 751,
-        "priority": 12
-    },
-    {
-        "PID": 31,
-        "period-time": 473,
-        "priority": 14
-    },
-    {
-        "PID": 32,
-        "period-time": 287,
-        "priority": 9
-    },
-    {
-        "PID": 33,
-        "period-time": 359,
-        "priority": 9
-    },
-    {
-        "PID": 34,
-        "period-time": 761,
-        "priority": 5
-    },
-    {
-        "PID": 35,
-        "period-time": 695,
-        "priority": 12
-    },
-    {
-        "PID": 36,
-        "period-time": 385,
-        "priority": 14
-    },
-    {
-        "PID": 37,
-        "period-time": 717,
-        "priority": 1
-    },
-    {
-        "PID": 38,
-        "period-time": 205,
-        "priority": 10
-    },
-    {
-        "PID": 39,
-        "period-time": 605,
-        "priority": 3
-    },
-    {
-        "PID": 40,
-        "period-time": 266,
-        "priority": 7
-    },
-    {
-        "PID": 41,
-        "period-time": 368,
-        "priority": 15
-    },
-    {
-        "PID": 42,
-        "period-time": 505,
-        "priority": 5
-    },
-    {
-        "PID": 43,
-        "period-time": 641,
-        "priority": 4
-    },
-    {
-        "PID": 44,
-        "period-time": 295,
-        "priority": 5
-    },
-    {
-        "PID": 45,
-        "period-time": 350,
-        "priority": 5
-    },
-    {
-        "PID": 46,
-        "period-time": 370,
-        "priority": 2
-    },
-    {
-        "PID": 47,
-        "period-time": 547,
-        "priority": 12
-    },
-    {
-        "PID": 48,
-        "period-time": 330,
-        "priority": 14
-    },
-    {
-        "PID": 49,
-        "period-time": 758,
-        "priority": 15
-    }
-]
+    "data": [
+        {
+            "PID": 0,
+            "arrive-time": 0,
+            "period-time": 3,
+            "priority": 1
+        },
+        {
+            "PID": 1,
+            "arrive-time": 3,
+            "period-time": 13,
+            "priority": 1
+        },
+        {
+            "PID": 2,
+            "arrive-time": 4,
+            "period-time": 3,
+            "priority": 1
+        },
+        {
+            "PID": 3,
+            "arrive-time": 6,
+            "period-time": 14,
+            "priority": 1
+        },
+        {
+            "PID": 4,
+            "arrive-time": 7,
+            "period-time": 5,
+            "priority": 1
+        },
+        {
+            "PID": 5,
+            "arrive-time": 8,
+            "period-time": 10,
+            "priority": 1
+        },
+        {
+            "PID": 6,
+            "arrive-time": 9,
+            "period-time": 15,
+            "priority": 1
+        },
+        {
+            "PID": 7,
+            "arrive-time": 9,
+            "period-time": 5,
+            "priority": 1
+        },
+        {
+            "PID": 8,
+            "arrive-time": 11,
+            "period-time": 3,
+            "priority": 1
+        },
+        {
+            "PID": 9,
+            "arrive-time": 11,
+            "period-time": 11,
+            "priority": 1
+        },
+        {
+            "PID": 10,
+            "arrive-time": 13,
+            "period-time": 4,
+            "priority": 1
+        },
+        {
+            "PID": 11,
+            "arrive-time": 14,
+            "period-time": 14,
+            "priority": 1
+        },
+        {
+            "PID": 12,
+            "arrive-time": 14,
+            "period-time": 1,
+            "priority": 1
+        },
+        {
+            "PID": 13,
+            "arrive-time": 14,
+            "period-time": 14,
+            "priority": 1
+        },
+        {
+            "PID": 14,
+            "arrive-time": 14,
+            "period-time": 7,
+            "priority": 1
+        },
+        {
+            "PID": 15,
+            "arrive-time": 16,
+            "period-time": 9,
+            "priority": 1
+        },
+        {
+            "PID": 16,
+            "arrive-time": 17,
+            "period-time": 6,
+            "priority": 1
+        },
+        {
+            "PID": 17,
+            "arrive-time": 19,
+            "period-time": 5,
+            "priority": 1
+        },
+        {
+            "PID": 18,
+            "arrive-time": 19,
+            "period-time": 10,
+            "priority": 1
+        },
+        {
+            "PID": 19,
+            "arrive-time": 20,
+            "period-time": 1,
+            "priority": 1
+        },
+        {
+            "PID": 20,
+            "arrive-time": 21,
+            "period-time": 10,
+            "priority": 1
+        },
+        {
+            "PID": 21,
+            "arrive-time": 22,
+            "period-time": 15,
+            "priority": 1
+        },
+        {
+            "PID": 22,
+            "arrive-time": 22,
+            "period-time": 8,
+            "priority": 1
+        },
+        {
+            "PID": 23,
+            "arrive-time": 23,
+            "period-time": 11,
+            "priority": 1
+        },
+        {
+            "PID": 24,
+            "arrive-time": 24,
+            "period-time": 4,
+            "priority": 1
+        },
+        {
+            "PID": 25,
+            "arrive-time": 25,
+            "period-time": 5,
+            "priority": 1
+        },
+        {
+            "PID": 26,
+            "arrive-time": 25,
+            "period-time": 7,
+            "priority": 1
+        },
+        {
+            "PID": 27,
+            "arrive-time": 25,
+            "period-time": 3,
+            "priority": 1
+        },
+        {
+            "PID": 28,
+            "arrive-time": 27,
+            "period-time": 7,
+            "priority": 1
+        },
+        {
+            "PID": 29,
+            "arrive-time": 28,
+            "period-time": 9,
+            "priority": 1
+        },
+        {
+            "PID": 30,
+            "arrive-time": 29,
+            "period-time": 1,
+            "priority": 1
+        },
+        {
+            "PID": 31,
+            "arrive-time": 31,
+            "period-time": 12,
+            "priority": 1
+        },
+        {
+            "PID": 32,
+            "arrive-time": 31,
+            "period-time": 13,
+            "priority": 1
+        },
+        {
+            "PID": 33,
+            "arrive-time": 31,
+            "period-time": 11,
+            "priority": 1
+        },
+        {
+            "PID": 34,
+            "arrive-time": 32,
+            "period-time": 8,
+            "priority": 1
+        },
+        {
+            "PID": 35,
+            "arrive-time": 32,
+            "period-time": 11,
+            "priority": 1
+        },
+        {
+            "PID": 36,
+            "arrive-time": 32,
+            "period-time": 3,
+            "priority": 1
+        },
+        {
+            "PID": 37,
+            "arrive-time": 32,
+            "period-time": 9,
+            "priority": 1
+        },
+        {
+            "PID": 38,
+            "arrive-time": 33,
+            "period-time": 4,
+            "priority": 1
+        },
+        {
+            "PID": 39,
+            "arrive-time": 34,
+            "period-time": 15,
+            "priority": 1
+        },
+        {
+            "PID": 40,
+            "arrive-time": 35,
+            "period-time": 9,
+            "priority": 1
+        },
+        {
+            "PID": 41,
+            "arrive-time": 35,
+            "period-time": 11,
+            "priority": 1
+        },
+        {
+            "PID": 42,
+            "arrive-time": 36,
+            "period-time": 14,
+            "priority": 1
+        },
+        {
+            "PID": 43,
+            "arrive-time": 36,
+            "period-time": 7,
+            "priority": 1
+        },
+        {
+            "PID": 44,
+            "arrive-time": 38,
+            "period-time": 6,
+            "priority": 1
+        },
+        {
+            "PID": 45,
+            "arrive-time": 39,
+            "period-time": 13,
+            "priority": 1
+        },
+        {
+            "PID": 46,
+            "arrive-time": 41,
+            "period-time": 15,
+            "priority": 1
+        },
+        {
+            "PID": 47,
+            "arrive-time": 42,
+            "period-time": 14,
+            "priority": 1
+        },
+        {
+            "PID": 48,
+            "arrive-time": 43,
+            "period-time": 5,
+            "priority": 1
+        },
+        {
+            "PID": 49,
+            "arrive-time": 45,
+            "period-time": 2,
+            "priority": 1
+        },
+        {
+            "PID": 50,
+            "arrive-time": 46,
+            "period-time": 5,
+            "priority": 1
+        },
+        {
+            "PID": 51,
+            "arrive-time": 47,
+            "period-time": 1,
+            "priority": 1
+        },
+        {
+            "PID": 52,
+            "arrive-time": 48,
+            "period-time": 5,
+            "priority": 1
+        },
+        {
+            "PID": 53,
+            "arrive-time": 50,
+            "period-time": 15,
+            "priority": 1
+        },
+        {
+            "PID": 54,
+            "arrive-time": 52,
+            "period-time": 1,
+            "priority": 1
+        },
+        {
+            "PID": 55,
+            "arrive-time": 54,
+            "period-time": 15,
+            "priority": 1
+        },
+        {
+            "PID": 56,
+            "arrive-time": 55,
+            "period-time": 10,
+            "priority": 1
+        },
+        {
+            "PID": 57,
+            "arrive-time": 55,
+            "period-time": 14,
+            "priority": 1
+        },
+        {
+            "PID": 58,
+            "arrive-time": 57,
+            "period-time": 11,
+            "priority": 1
+        },
+        {
+            "PID": 59,
+            "arrive-time": 59,
+            "period-time": 3,
+            "priority": 1
+        },
+        {
+            "PID": 60,
+            "arrive-time": 59,
+            "period-time": 2,
+            "priority": 1
+        },
+        {
+            "PID": 61,
+            "arrive-time": 61,
+            "period-time": 11,
+            "priority": 1
+        },
+        {
+            "PID": 62,
+            "arrive-time": 63,
+            "period-time": 14,
+            "priority": 1
+        },
+        {
+            "PID": 63,
+            "arrive-time": 63,
+            "period-time": 1,
+            "priority": 1
+        },
+        {
+            "PID": 64,
+            "arrive-time": 63,
+            "period-time": 5,
+            "priority": 1
+        },
+        {
+            "PID": 65,
+            "arrive-time": 64,
+            "period-time": 3,
+            "priority": 1
+        },
+        {
+            "PID": 66,
+            "arrive-time": 64,
+            "period-time": 4,
+            "priority": 1
+        },
+        {
+            "PID": 67,
+            "arrive-time": 64,
+            "period-time": 3,
+            "priority": 1
+        },
+        {
+            "PID": 68,
+            "arrive-time": 66,
+            "period-time": 15,
+            "priority": 1
+        },
+        {
+            "PID": 69,
+            "arrive-time": 67,
+            "period-time": 9,
+            "priority": 1
+        },
+        {
+            "PID": 70,
+            "arrive-time": 68,
+            "period-time": 8,
+            "priority": 1
+        },
+        {
+            "PID": 71,
+            "arrive-time": 68,
+            "period-time": 12,
+            "priority": 1
+        },
+        {
+            "PID": 72,
+            "arrive-time": 69,
+            "period-time": 15,
+            "priority": 1
+        },
+        {
+            "PID": 73,
+            "arrive-time": 71,
+            "period-time": 4,
+            "priority": 1
+        },
+        {
+            "PID": 74,
+            "arrive-time": 71,
+            "period-time": 13,
+            "priority": 1
+        },
+        {
+            "PID": 75,
+            "arrive-time": 71,
+            "period-time": 11,
+            "priority": 1
+        },
+        {
+            "PID": 76,
+            "arrive-time": 72,
+            "period-time": 14,
+            "priority": 1
+        },
+        {
+            "PID": 77,
+            "arrive-time": 73,
+            "period-time": 2,
+            "priority": 1
+        },
+        {
+            "PID": 78,
+            "arrive-time": 73,
+            "period-time": 1,
+            "priority": 1
+        },
+        {
+            "PID": 79,
+            "arrive-time": 74,
+            "period-time": 7,
+            "priority": 1
+        },
+        {
+            "PID": 80,
+            "arrive-time": 76,
+            "period-time": 1,
+            "priority": 1
+        },
+        {
+            "PID": 81,
+            "arrive-time": 77,
+            "period-time": 11,
+            "priority": 1
+        },
+        {
+            "PID": 82,
+            "arrive-time": 77,
+            "period-time": 2,
+            "priority": 1
+        },
+        {
+            "PID": 83,
+            "arrive-time": 79,
+            "period-time": 4,
+            "priority": 1
+        },
+        {
+            "PID": 84,
+            "arrive-time": 79,
+            "period-time": 1,
+            "priority": 1
+        },
+        {
+            "PID": 85,
+            "arrive-time": 80,
+            "period-time": 14,
+            "priority": 1
+        },
+        {
+            "PID": 86,
+            "arrive-time": 82,
+            "period-time": 14,
+            "priority": 1
+        },
+        {
+            "PID": 87,
+            "arrive-time": 83,
+            "period-time": 12,
+            "priority": 1
+        },
+        {
+            "PID": 88,
+            "arrive-time": 84,
+            "period-time": 3,
+            "priority": 1
+        },
+        {
+            "PID": 89,
+            "arrive-time": 85,
+            "period-time": 4,
+            "priority": 1
+        },
+        {
+            "PID": 90,
+            "arrive-time": 85,
+            "period-time": 10,
+            "priority": 1
+        },
+        {
+            "PID": 91,
+            "arrive-time": 87,
+            "period-time": 7,
+            "priority": 1
+        },
+        {
+            "PID": 92,
+            "arrive-time": 88,
+            "period-time": 10,
+            "priority": 1
+        },
+        {
+            "PID": 93,
+            "arrive-time": 88,
+            "period-time": 8,
+            "priority": 1
+        },
+        {
+            "PID": 94,
+            "arrive-time": 90,
+            "period-time": 1,
+            "priority": 1
+        },
+        {
+            "PID": 95,
+            "arrive-time": 92,
+            "period-time": 7,
+            "priority": 1
+        },
+        {
+            "PID": 96,
+            "arrive-time": 92,
+            "period-time": 15,
+            "priority": 1
+        },
+        {
+            "PID": 97,
+            "arrive-time": 94,
+            "period-time": 9,
+            "priority": 1
+        },
+        {
+            "PID": 98,
+            "arrive-time": 96,
+            "period-time": 12,
+            "priority": 1
+        },
+        {
+            "PID": 99,
+            "arrive-time": 98,
+            "period-time": 5,
+            "priority": 1
+        }
+    ]
+}
