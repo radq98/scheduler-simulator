@@ -2,612 +2,611 @@
     "settings": {
         "numberOfProcesses": 100,
         "minimumProcessDuration": 1,
-        "maximumProcessDuration": 15,
-        "processDispersionFactor": 15,
-        "randomizePriority": false,
-        "randomSeed": 15,
-        "numberOfPriorityLevels": 5
+        "maximumProcessDuration": 50,
+        "processDispersionFactor": 50,
+        "randomizePriority": true,
+        "numberOfPriorityLevels": 20
     },
     "data": [
         {
             "PID": 0,
             "arrive-time": 0,
-            "period-time": 3,
-            "priority": 1
+            "period-time": 14,
+            "priority": 15
         },
         {
             "PID": 1,
-            "arrive-time": 3,
-            "period-time": 13,
-            "priority": 1
+            "arrive-time": 16,
+            "period-time": 16,
+            "priority": 8
         },
         {
             "PID": 2,
-            "arrive-time": 4,
-            "period-time": 3,
-            "priority": 1
+            "arrive-time": 30,
+            "period-time": 38,
+            "priority": 12
         },
         {
             "PID": 3,
-            "arrive-time": 6,
-            "period-time": 14,
-            "priority": 1
+            "arrive-time": 43,
+            "period-time": 37,
+            "priority": 8
         },
         {
             "PID": 4,
-            "arrive-time": 7,
-            "period-time": 5,
-            "priority": 1
+            "arrive-time": 60,
+            "period-time": 40,
+            "priority": 12
         },
         {
             "PID": 5,
-            "arrive-time": 8,
-            "period-time": 10,
-            "priority": 1
+            "arrive-time": 61,
+            "period-time": 28,
+            "priority": 6
         },
         {
             "PID": 6,
-            "arrive-time": 9,
-            "period-time": 15,
-            "priority": 1
+            "arrive-time": 67,
+            "period-time": 21,
+            "priority": 13
         },
         {
             "PID": 7,
-            "arrive-time": 9,
-            "period-time": 5,
-            "priority": 1
+            "arrive-time": 86,
+            "period-time": 8,
+            "priority": 8
         },
         {
             "PID": 8,
-            "arrive-time": 11,
-            "period-time": 3,
-            "priority": 1
+            "arrive-time": 109,
+            "period-time": 42,
+            "priority": 19
         },
         {
             "PID": 9,
-            "arrive-time": 11,
-            "period-time": 11,
-            "priority": 1
+            "arrive-time": 131,
+            "period-time": 45,
+            "priority": 12
         },
         {
             "PID": 10,
-            "arrive-time": 13,
-            "period-time": 4,
+            "arrive-time": 149,
+            "period-time": 33,
             "priority": 1
         },
         {
             "PID": 11,
-            "arrive-time": 14,
-            "period-time": 14,
-            "priority": 1
+            "arrive-time": 156,
+            "period-time": 8,
+            "priority": 6
         },
         {
             "PID": 12,
-            "arrive-time": 14,
-            "period-time": 1,
-            "priority": 1
+            "arrive-time": 168,
+            "period-time": 23,
+            "priority": 9
         },
         {
             "PID": 13,
-            "arrive-time": 14,
-            "period-time": 14,
-            "priority": 1
+            "arrive-time": 168,
+            "period-time": 37,
+            "priority": 19
         },
         {
             "PID": 14,
-            "arrive-time": 14,
-            "period-time": 7,
+            "arrive-time": 180,
+            "period-time": 38,
             "priority": 1
         },
         {
             "PID": 15,
-            "arrive-time": 16,
+            "arrive-time": 187,
             "period-time": 9,
-            "priority": 1
+            "priority": 2
         },
         {
             "PID": 16,
-            "arrive-time": 17,
-            "period-time": 6,
-            "priority": 1
+            "arrive-time": 193,
+            "period-time": 48,
+            "priority": 12
         },
         {
             "PID": 17,
-            "arrive-time": 19,
-            "period-time": 5,
-            "priority": 1
+            "arrive-time": 212,
+            "period-time": 11,
+            "priority": 16
         },
         {
             "PID": 18,
-            "arrive-time": 19,
-            "period-time": 10,
-            "priority": 1
+            "arrive-time": 214,
+            "period-time": 46,
+            "priority": 11
         },
         {
             "PID": 19,
-            "arrive-time": 20,
-            "period-time": 1,
-            "priority": 1
+            "arrive-time": 237,
+            "period-time": 40,
+            "priority": 8
         },
         {
             "PID": 20,
-            "arrive-time": 21,
-            "period-time": 10,
-            "priority": 1
+            "arrive-time": 258,
+            "period-time": 5,
+            "priority": 8
         },
         {
             "PID": 21,
-            "arrive-time": 22,
-            "period-time": 15,
-            "priority": 1
+            "arrive-time": 280,
+            "period-time": 12,
+            "priority": 20
         },
         {
             "PID": 22,
-            "arrive-time": 22,
-            "period-time": 8,
-            "priority": 1
+            "arrive-time": 302,
+            "period-time": 46,
+            "priority": 20
         },
         {
             "PID": 23,
-            "arrive-time": 23,
-            "period-time": 11,
-            "priority": 1
+            "arrive-time": 304,
+            "period-time": 24,
+            "priority": 12
         },
         {
             "PID": 24,
-            "arrive-time": 24,
-            "period-time": 4,
-            "priority": 1
+            "arrive-time": 328,
+            "period-time": 44,
+            "priority": 2
         },
         {
             "PID": 25,
-            "arrive-time": 25,
-            "period-time": 5,
-            "priority": 1
+            "arrive-time": 348,
+            "period-time": 38,
+            "priority": 7
         },
         {
             "PID": 26,
-            "arrive-time": 25,
-            "period-time": 7,
-            "priority": 1
+            "arrive-time": 359,
+            "period-time": 38,
+            "priority": 14
         },
         {
             "PID": 27,
-            "arrive-time": 25,
-            "period-time": 3,
-            "priority": 1
+            "arrive-time": 373,
+            "period-time": 23,
+            "priority": 17
         },
         {
             "PID": 28,
-            "arrive-time": 27,
-            "period-time": 7,
-            "priority": 1
+            "arrive-time": 385,
+            "period-time": 36,
+            "priority": 8
         },
         {
             "PID": 29,
-            "arrive-time": 28,
-            "period-time": 9,
-            "priority": 1
+            "arrive-time": 402,
+            "period-time": 33,
+            "priority": 9
         },
         {
             "PID": 30,
-            "arrive-time": 29,
-            "period-time": 1,
-            "priority": 1
+            "arrive-time": 417,
+            "period-time": 46,
+            "priority": 2
         },
         {
             "PID": 31,
-            "arrive-time": 31,
-            "period-time": 12,
-            "priority": 1
+            "arrive-time": 417,
+            "period-time": 34,
+            "priority": 15
         },
         {
             "PID": 32,
-            "arrive-time": 31,
-            "period-time": 13,
-            "priority": 1
+            "arrive-time": 436,
+            "period-time": 41,
+            "priority": 2
         },
         {
             "PID": 33,
-            "arrive-time": 31,
+            "arrive-time": 449,
             "period-time": 11,
-            "priority": 1
+            "priority": 18
         },
         {
             "PID": 34,
-            "arrive-time": 32,
-            "period-time": 8,
-            "priority": 1
+            "arrive-time": 467,
+            "period-time": 34,
+            "priority": 6
         },
         {
             "PID": 35,
-            "arrive-time": 32,
-            "period-time": 11,
-            "priority": 1
+            "arrive-time": 470,
+            "period-time": 26,
+            "priority": 7
         },
         {
             "PID": 36,
-            "arrive-time": 32,
-            "period-time": 3,
-            "priority": 1
+            "arrive-time": 483,
+            "period-time": 16,
+            "priority": 11
         },
         {
             "PID": 37,
-            "arrive-time": 32,
-            "period-time": 9,
-            "priority": 1
+            "arrive-time": 508,
+            "period-time": 16,
+            "priority": 5
         },
         {
             "PID": 38,
-            "arrive-time": 33,
-            "period-time": 4,
-            "priority": 1
+            "arrive-time": 519,
+            "period-time": 50,
+            "priority": 11
         },
         {
             "PID": 39,
-            "arrive-time": 34,
-            "period-time": 15,
-            "priority": 1
+            "arrive-time": 526,
+            "period-time": 33,
+            "priority": 3
         },
         {
             "PID": 40,
-            "arrive-time": 35,
-            "period-time": 9,
-            "priority": 1
+            "arrive-time": 529,
+            "period-time": 12,
+            "priority": 7
         },
         {
             "PID": 41,
-            "arrive-time": 35,
-            "period-time": 11,
-            "priority": 1
+            "arrive-time": 548,
+            "period-time": 41,
+            "priority": 19
         },
         {
             "PID": 42,
-            "arrive-time": 36,
-            "period-time": 14,
-            "priority": 1
+            "arrive-time": 564,
+            "period-time": 49,
+            "priority": 4
         },
         {
             "PID": 43,
-            "arrive-time": 36,
-            "period-time": 7,
-            "priority": 1
+            "arrive-time": 589,
+            "period-time": 29,
+            "priority": 3
         },
         {
             "PID": 44,
-            "arrive-time": 38,
-            "period-time": 6,
-            "priority": 1
+            "arrive-time": 591,
+            "period-time": 27,
+            "priority": 16
         },
         {
             "PID": 45,
-            "arrive-time": 39,
-            "period-time": 13,
-            "priority": 1
+            "arrive-time": 599,
+            "period-time": 39,
+            "priority": 8
         },
         {
             "PID": 46,
-            "arrive-time": 41,
-            "period-time": 15,
-            "priority": 1
+            "arrive-time": 612,
+            "period-time": 28,
+            "priority": 2
         },
         {
             "PID": 47,
-            "arrive-time": 42,
-            "period-time": 14,
-            "priority": 1
+            "arrive-time": 637,
+            "period-time": 43,
+            "priority": 4
         },
         {
             "PID": 48,
-            "arrive-time": 43,
-            "period-time": 5,
-            "priority": 1
+            "arrive-time": 648,
+            "period-time": 22,
+            "priority": 17
         },
         {
             "PID": 49,
-            "arrive-time": 45,
-            "period-time": 2,
-            "priority": 1
+            "arrive-time": 660,
+            "period-time": 18,
+            "priority": 13
         },
         {
             "PID": 50,
-            "arrive-time": 46,
-            "period-time": 5,
-            "priority": 1
+            "arrive-time": 661,
+            "period-time": 24,
+            "priority": 20
         },
         {
             "PID": 51,
-            "arrive-time": 47,
-            "period-time": 1,
-            "priority": 1
+            "arrive-time": 683,
+            "period-time": 23,
+            "priority": 9
         },
         {
             "PID": 52,
-            "arrive-time": 48,
-            "period-time": 5,
-            "priority": 1
+            "arrive-time": 686,
+            "period-time": 49,
+            "priority": 19
         },
         {
             "PID": 53,
-            "arrive-time": 50,
-            "period-time": 15,
-            "priority": 1
+            "arrive-time": 688,
+            "period-time": 21,
+            "priority": 4
         },
         {
             "PID": 54,
-            "arrive-time": 52,
-            "period-time": 1,
-            "priority": 1
+            "arrive-time": 697,
+            "period-time": 13,
+            "priority": 11
         },
         {
             "PID": 55,
-            "arrive-time": 54,
-            "period-time": 15,
-            "priority": 1
+            "arrive-time": 711,
+            "period-time": 48,
+            "priority": 9
         },
         {
             "PID": 56,
-            "arrive-time": 55,
-            "period-time": 10,
-            "priority": 1
+            "arrive-time": 723,
+            "period-time": 42,
+            "priority": 13
         },
         {
             "PID": 57,
-            "arrive-time": 55,
-            "period-time": 14,
-            "priority": 1
+            "arrive-time": 740,
+            "period-time": 36,
+            "priority": 2
         },
         {
             "PID": 58,
-            "arrive-time": 57,
-            "period-time": 11,
-            "priority": 1
+            "arrive-time": 755,
+            "period-time": 22,
+            "priority": 13
         },
         {
             "PID": 59,
-            "arrive-time": 59,
-            "period-time": 3,
-            "priority": 1
+            "arrive-time": 766,
+            "period-time": 11,
+            "priority": 20
         },
         {
             "PID": 60,
-            "arrive-time": 59,
-            "period-time": 2,
-            "priority": 1
+            "arrive-time": 766,
+            "period-time": 23,
+            "priority": 14
         },
         {
             "PID": 61,
-            "arrive-time": 61,
-            "period-time": 11,
+            "arrive-time": 778,
+            "period-time": 40,
             "priority": 1
         },
         {
             "PID": 62,
-            "arrive-time": 63,
-            "period-time": 14,
-            "priority": 1
+            "arrive-time": 787,
+            "period-time": 42,
+            "priority": 11
         },
         {
             "PID": 63,
-            "arrive-time": 63,
-            "period-time": 1,
-            "priority": 1
+            "arrive-time": 810,
+            "period-time": 43,
+            "priority": 10
         },
         {
             "PID": 64,
-            "arrive-time": 63,
-            "period-time": 5,
-            "priority": 1
+            "arrive-time": 830,
+            "period-time": 13,
+            "priority": 7
         },
         {
             "PID": 65,
-            "arrive-time": 64,
-            "period-time": 3,
-            "priority": 1
+            "arrive-time": 844,
+            "period-time": 29,
+            "priority": 4
         },
         {
             "PID": 66,
-            "arrive-time": 64,
-            "period-time": 4,
-            "priority": 1
+            "arrive-time": 860,
+            "period-time": 48,
+            "priority": 15
         },
         {
             "PID": 67,
-            "arrive-time": 64,
-            "period-time": 3,
-            "priority": 1
+            "arrive-time": 881,
+            "period-time": 32,
+            "priority": 2
         },
         {
             "PID": 68,
-            "arrive-time": 66,
-            "period-time": 15,
-            "priority": 1
+            "arrive-time": 906,
+            "period-time": 31,
+            "priority": 2
         },
         {
             "PID": 69,
-            "arrive-time": 67,
-            "period-time": 9,
-            "priority": 1
+            "arrive-time": 931,
+            "period-time": 41,
+            "priority": 16
         },
         {
             "PID": 70,
-            "arrive-time": 68,
-            "period-time": 8,
-            "priority": 1
+            "arrive-time": 938,
+            "period-time": 39,
+            "priority": 2
         },
         {
             "PID": 71,
-            "arrive-time": 68,
-            "period-time": 12,
-            "priority": 1
+            "arrive-time": 938,
+            "period-time": 20,
+            "priority": 3
         },
         {
             "PID": 72,
-            "arrive-time": 69,
-            "period-time": 15,
-            "priority": 1
+            "arrive-time": 953,
+            "period-time": 6,
+            "priority": 9
         },
         {
             "PID": 73,
-            "arrive-time": 71,
-            "period-time": 4,
-            "priority": 1
+            "arrive-time": 954,
+            "period-time": 31,
+            "priority": 20
         },
         {
             "PID": 74,
-            "arrive-time": 71,
-            "period-time": 13,
-            "priority": 1
+            "arrive-time": 955,
+            "period-time": 48,
+            "priority": 16
         },
         {
             "PID": 75,
-            "arrive-time": 71,
-            "period-time": 11,
+            "arrive-time": 972,
+            "period-time": 30,
             "priority": 1
         },
         {
             "PID": 76,
-            "arrive-time": 72,
-            "period-time": 14,
-            "priority": 1
+            "arrive-time": 996,
+            "period-time": 6,
+            "priority": 8
         },
         {
             "PID": 77,
-            "arrive-time": 73,
-            "period-time": 2,
-            "priority": 1
+            "arrive-time": 1001,
+            "period-time": 36,
+            "priority": 3
         },
         {
             "PID": 78,
-            "arrive-time": 73,
-            "period-time": 1,
-            "priority": 1
+            "arrive-time": 1008,
+            "period-time": 48,
+            "priority": 9
         },
         {
             "PID": 79,
-            "arrive-time": 74,
-            "period-time": 7,
-            "priority": 1
+            "arrive-time": 1016,
+            "period-time": 39,
+            "priority": 18
         },
         {
             "PID": 80,
-            "arrive-time": 76,
-            "period-time": 1,
-            "priority": 1
+            "arrive-time": 1039,
+            "period-time": 44,
+            "priority": 6
         },
         {
             "PID": 81,
-            "arrive-time": 77,
-            "period-time": 11,
-            "priority": 1
+            "arrive-time": 1046,
+            "period-time": 40,
+            "priority": 20
         },
         {
             "PID": 82,
-            "arrive-time": 77,
-            "period-time": 2,
-            "priority": 1
+            "arrive-time": 1061,
+            "period-time": 26,
+            "priority": 17
         },
         {
             "PID": 83,
-            "arrive-time": 79,
-            "period-time": 4,
-            "priority": 1
+            "arrive-time": 1072,
+            "period-time": 19,
+            "priority": 7
         },
         {
             "PID": 84,
-            "arrive-time": 79,
-            "period-time": 1,
-            "priority": 1
+            "arrive-time": 1097,
+            "period-time": 50,
+            "priority": 6
         },
         {
             "PID": 85,
-            "arrive-time": 80,
-            "period-time": 14,
-            "priority": 1
+            "arrive-time": 1105,
+            "period-time": 22,
+            "priority": 20
         },
         {
             "PID": 86,
-            "arrive-time": 82,
-            "period-time": 14,
-            "priority": 1
+            "arrive-time": 1125,
+            "period-time": 26,
+            "priority": 19
         },
         {
             "PID": 87,
-            "arrive-time": 83,
-            "period-time": 12,
-            "priority": 1
+            "arrive-time": 1139,
+            "period-time": 6,
+            "priority": 17
         },
         {
             "PID": 88,
-            "arrive-time": 84,
-            "period-time": 3,
-            "priority": 1
+            "arrive-time": 1141,
+            "period-time": 31,
+            "priority": 20
         },
         {
             "PID": 89,
-            "arrive-time": 85,
-            "period-time": 4,
-            "priority": 1
+            "arrive-time": 1164,
+            "period-time": 1,
+            "priority": 7
         },
         {
             "PID": 90,
-            "arrive-time": 85,
-            "period-time": 10,
-            "priority": 1
+            "arrive-time": 1173,
+            "period-time": 6,
+            "priority": 16
         },
         {
             "PID": 91,
-            "arrive-time": 87,
-            "period-time": 7,
-            "priority": 1
+            "arrive-time": 1175,
+            "period-time": 49,
+            "priority": 3
         },
         {
             "PID": 92,
-            "arrive-time": 88,
-            "period-time": 10,
-            "priority": 1
+            "arrive-time": 1191,
+            "period-time": 20,
+            "priority": 20
         },
         {
             "PID": 93,
-            "arrive-time": 88,
-            "period-time": 8,
-            "priority": 1
+            "arrive-time": 1200,
+            "period-time": 40,
+            "priority": 18
         },
         {
             "PID": 94,
-            "arrive-time": 90,
-            "period-time": 1,
-            "priority": 1
+            "arrive-time": 1205,
+            "period-time": 23,
+            "priority": 14
         },
         {
             "PID": 95,
-            "arrive-time": 92,
-            "period-time": 7,
-            "priority": 1
+            "arrive-time": 1206,
+            "period-time": 22,
+            "priority": 12
         },
         {
             "PID": 96,
-            "arrive-time": 92,
-            "period-time": 15,
-            "priority": 1
+            "arrive-time": 1218,
+            "period-time": 36,
+            "priority": 17
         },
         {
             "PID": 97,
-            "arrive-time": 94,
-            "period-time": 9,
-            "priority": 1
+            "arrive-time": 1233,
+            "period-time": 19,
+            "priority": 11
         },
         {
             "PID": 98,
-            "arrive-time": 96,
-            "period-time": 12,
-            "priority": 1
+            "arrive-time": 1237,
+            "period-time": 41,
+            "priority": 14
         },
         {
             "PID": 99,
-            "arrive-time": 98,
-            "period-time": 5,
-            "priority": 1
+            "arrive-time": 1253,
+            "period-time": 36,
+            "priority": 4
         }
     ]
 }

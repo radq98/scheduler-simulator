@@ -1,8 +1,6 @@
 {% extends "base.html" %} {% block title %}Main{% endblock %} {% block head %}
 {{ super() }}
-<style type="text/css">
-  .important {
-    color: #336699;
+<script src="/static/js/main.js"></script>
   }
 </style>
 {% endblock %} {% block content %}
@@ -15,12 +13,7 @@
         <div class="row">
           <legend class="col-form-label col-sm-4 pt-0">Algorythm</legend>
           <div class="col-sm-8" style="text-align: center;">
-            <select
-              class="form-control"
-              id="form-algorythm"
-              name="form-algorythm"
-              placeholder="Algorythm"
-            >
+            <select class="form-control" id="form-algorythm" name="form-algorythm" placeholder="Algorythm">
               <option>FCFS</option>
               <option>Round Robin</option>
               <option>Priority planning</option>
@@ -32,33 +25,45 @@
       <div class="form-group row" id="form-all-algorythms-div">
         <legend class="col-form-label col-sm-4 pt-0">Dataset</legend>
         <div class="col-sm-8" style="text-align: center;">
-          <select
-            class="form-control"
-            id="form-dataset"
-            name="form-dataset"
-            placeholder="Dataset"
-          >
-            <option>dataset1.json</option>
-            <option>dataset2.json</option>
-            <option>dataset3.json</option>
+          <select class="form-control" id="form-dataset" name="form-dataset" placeholder="Dataset">
+            {% for dataset in context.datasetsBase %}
+            <option>{{ dataset }}</option>
+            {% endfor %}
           </select>
         </div>
       </div>
-
-      <div class="form-group row" id="form-FCFS-div">
-        <label for="test_duration" class="col-sm-4 col-form-label"
-          >Test duration</label
-        >
-        <div class="col-sm-8">
-          <input
-            type="number"
-            class="form-control"
-            id="form-test-duration"
-            name="test_duration"
-            placeholder="Type number in seconds"
-          />
+      <div id="form-RR-div" hidden>
+        <div class="form-group row">
+          <label for="rr-interval" class="col-sm-4 col-form-label">Round Robin intervals</label>
+          <div class="col-sm-8">
+            <input type="number" class="form-control" id="form-rr-interval" name="rr-interval"
+              placeholder="Type number in time unit" />
+          </div>
         </div>
       </div>
+      <div id="form-PP-div" hidden>
+        <div class="form-group row">
+          <label for="aging-priorities" class="col-sm-4 col-form-label"
+            >Aging priorities</label
+          >
+          <div class="col-sm-8">
+            <input
+              type="checkbox"
+              id="form-aging-priorities"
+              name="aging-priorities"
+              title="Enable or disable aging priority planning algorithm version."
+            />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="pp-aging-interval" class="col-sm-4 col-form-label">Aging interval time</label>
+          <div class="col-sm-8">
+            <input type="number" class="form-control" id="form-pp-aging-interval" name="pp-aging-interval"
+              placeholder="Type number in time unit" />
+          </div>
+        </div>
+      </div>
+
       <div class="form-group row">
         <div class="col-sm-12" style="text-align: center;">
           <button id="start-button" type="button" class="btn btn-primary">

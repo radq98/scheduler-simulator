@@ -26,10 +26,11 @@ footertext = metadata['footertext']
 
 @app.route("/", methods=["GET", "POST"])
 def index():
-
+    datasetsBase = os.listdir("./datasets/")
     context = {
         "appversion": appversion,
         "footertext": footertext,
+        "datasetsBase": datasetsBase
     }
     return render_template("index.html", context=context)
 
@@ -50,8 +51,7 @@ def generator():
     #    for name in os.listdir("./datasets")
     #    if os.path.isdir(os.path.join("./datasets", name))
     #]
-    datasetsBase = os.listdir("./datasets/")
-    print(datasetsBase)
+    
     if request.method == 'POST':
         newDataset = {"settings": None, "data": []}
         form = request.form
@@ -61,7 +61,7 @@ def generator():
             "maximumProcessDuration": int(form.get("maximum-process-duration")),
             "processDispersionFactor": int(form.get("process-dispersion-factor")),
             "randomizePriority": bool(form.get("randomize-priority")),
-            "randomSeed": int(form.get("random-seed")),
+            #"randomSeed": int(form.get("random-seed")),
             "numberOfPriorityLevels": int(form.get("number-of-priority-levels"))
         }
         newDataset['settings'] = datasetSettings
@@ -84,11 +84,13 @@ def generator():
                     "period-time": randint(datasetSettings['minimumProcessDuration'],datasetSettings['maximumProcessDuration']), 
                     "priority": priority
                     })
+        uniqueDatasetId= randint(10000,99999)
+        datenow = datetime.now().date()
         if newDataset != []:
-            with open("./datasets/tmp.json", "w",) as f:
+            with open("./datasets/dataset-"+str(datenow)+"-"+str(uniqueDatasetId)+".json", "w",) as f:
                 json.dump(newDataset, f, indent=4)
         form = None
-    
+    datasetsBase = os.listdir("./datasets/")
     context = {
         "appversion": appversion,
         "footertext": footertext,
