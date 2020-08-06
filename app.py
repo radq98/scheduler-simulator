@@ -27,6 +27,29 @@ footertext = metadata['footertext']
 @app.route("/", methods=["GET", "POST"])
 def index():
     datasetsBase = os.listdir("./datasets/")
+    #arg = request.args
+    if request.method == "POST":
+        form = request.form
+        simulationSettings = {
+            "algorithm": str(form.get("form-algorithm")),
+            "dataset": str(form.get("form-dataset")),
+            "visualization": bool(form.get("form-visualization")),
+            "rrInterval": None,
+            "agingPriorities": None,
+            "ppAgingInterval": None
+        }
+        if simulationSettings['algorithm'] == "Round Robin":
+            simulationSettings['rrInterval'] = int(form.get("form-rr-interval"))
+        if simulationSettings['algorithm'] == "Priority planning":
+            simulationSettings['agingPriorities'] = bool(form.get("form-aging-priorities"))
+            if simulationSettings['agingPriorities'] == True:
+                simulationSettings['ppAgingInterval'] = int(form.get("form-pp-aging-interval"))
+
+        with open("./datasets/" + simulationSettings['dataset'], "r") as f:
+            dataset = json.load(f)
+        #print(dataset)
+    
+
     context = {
         "appversion": appversion,
         "footertext": footertext,
