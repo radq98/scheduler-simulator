@@ -1,22 +1,29 @@
 $(document).ready(function () { 
-    var formRRdiv = document.getElementById("form-RR-div");
-    var formPPdiv = document.getElementById("form-PP-div");
-    var formDataset = document.getElementById("form-dataset");
-    var formAlgorythm = document.getElementById("form-algorithm");
+
+    var formObjects = {
+        algorithm: document.getElementById("form-algorithm"),
+        dataset: document.getElementById("form-dataset"),
+        visualization: document.getElementById("form-visualization"),
+        rrInterval: document.getElementById("form-rr-interval"),
+        agingPriorities: document.getElementById("form-aging-priorities"),
+        ppAgingInterval: document.getElementById("form-pp-aging-interval"),
+        ppDiv: document.getElementById("form-PP-div"),
+        rrDiv: document.getElementById("form-RR-div")
+      }
 
     
     $('#form-algorithm').change(function(){
-        if (formAlgorythm.value == "Round Robin") {
-            formRRdiv.hidden = false;
-            formPPdiv.hidden = true;
+        if (formObjects.algorithm.value == "Round Robin") {
+            formObjects.rrDiv.hidden = false;
+            formObjects.ppDiv.hidden = true;
         }
-        else if (formAlgorythm.value == "Priority planning") {
-            formRRdiv.hidden = true;
-            formPPdiv.hidden = false;
+        else if (formObjects.algorithm.value == "Priority planning") {
+            formObjects.rrDiv.hidden = true;
+            formObjects.ppDiv.hidden = false;
         }
         else {
-            formRRdiv.hidden = true;
-            formPPdiv.hidden = true;
+            formObjects.rrDiv.hidden = true;
+            formObjects.ppDiv.hidden = true;
         }
     });
 });

@@ -23,32 +23,92 @@ with open("meta.json", "r") as meta_file:
 appversion = metadata['appversion']
 footertext = metadata['footertext']
 
+# scheduler class
+
+#class Scheduler:
+#  def __init__(self, dataset, age):
+#    self.dataset = dataset
+#    self.age = age
+
+#  def myfunc(self):
+#    print("Hello my name is " + self.name)
+
+#p1 = Person("John", 36)
+#p1.myfunc()
+
+@app.route('/_get_results')
+def get_results():
+    simulationSettings = {
+        "algorithm": request.args.get('algorithm', None, type=str),
+        "dataset": request.args.get('dataset', None, type=str),
+        "visualization": request.args.get('visualization', None, type=str),
+        "rrInterval": request.args.get('rrInterval', None, type=str),
+        "agingPriorities": request.args.get('agingPriorities', None, type=str),
+        "ppAgingInterval": request.args.get('ppAgingInterval', None, type=str)
+    }
+    dataset = None
+    with open("./datasets/" + simulationSettings['dataset'], "r") as f:
+        dataset = json.load(f)
+    
+    steps = []
+    values = []
+
+    #scheduling FCFS
+    def newStep(time, eventType, PID):
+        return {"time": time, "eventType": eventType, "PID": PID}
+    
+    def newValue(currentTime, toProcessCount, processedCount, queueList, processingList, processedList):
+        return {"currentTime": currentTime, "toProcessCount": toProcessCount, "processedCount": processedCount, "queueList": queueList, "processingList": processingList, "processedList": processedList}
+    currentTime = 0
+    toProcessCount = dataset['settings']['numberOfProcesses']
+    processedCount = 0
+    queueList = dataset['data']
+    #adding necessary parameters to process objects
+    for x in queueList:
+        x["waitingTime"] = 0
+    
+    processingList = []
+    processedList = []
+    while toProcessCount > 0:
+        values.append(newValue(currentTime, toProcessCount, processedCount, queueList.copy(), processingList.copy(), processedList.copy()))
+        for x in queueList:
+            if x['arrive-time'] == currentTime:
+                processingList.append(x.copy())
+                queueList.remove(x)
+                steps.append(newStep(currentTime, "arrive", str(processingList[-1]['PID'])))
+        if len(processingList) > 0:
+            if len(processingList) > 1:
+                for x in processingList:
+                    if x != processingList[0]:
+                        x['waitingTime'] += 1
+            steps.append(newStep(currentTime, "processing", str(processingList[0]['PID'])))
+            processingList[0]['period-time'] -= 1
+            if processingList[0]['period-time'] == 0:
+                processedList.append(processingList[0].copy())
+                steps.append(newStep(currentTime, "finished", str(processingList[0]['PID'])))
+                processingList.pop(0)
+                toProcessCount -= 1
+                processedCount += 1
+            if toProcessCount>0:
+                currentTime += 1
+        else:
+            steps.append(newStep(currentTime, "no-task", None))
+            currentTime += 1
+    steps.append(newStep(currentTime, "simulation-finished", None))
+    values.append(newValue("finished", toProcessCount, processedCount, queueList.copy(), processingList.copy(), processedList.copy()))
+    results = {
+        "settings": simulationSettings,
+        "steps": steps,
+        "values": values.copy()
+    }
+    print(results)
+
+    return jsonify(results)
+
 
 @app.route("/", methods=["GET", "POST"])
 def index():
     datasetsBase = os.listdir("./datasets/")
-    #arg = request.args
-    if request.method == "POST":
-        form = request.form
-        simulationSettings = {
-            "algorithm": str(form.get("form-algorithm")),
-            "dataset": str(form.get("form-dataset")),
-            "visualization": bool(form.get("form-visualization")),
-            "rrInterval": None,
-            "agingPriorities": None,
-            "ppAgingInterval": None
-        }
-        if simulationSettings['algorithm'] == "Round Robin":
-            simulationSettings['rrInterval'] = int(form.get("form-rr-interval"))
-        if simulationSettings['algorithm'] == "Priority planning":
-            simulationSettings['agingPriorities'] = bool(form.get("form-aging-priorities"))
-            if simulationSettings['agingPriorities'] == True:
-                simulationSettings['ppAgingInterval'] = int(form.get("form-pp-aging-interval"))
-
-        with open("./datasets/" + simulationSettings['dataset'], "r") as f:
-            dataset = json.load(f)
-        #print(dataset)
-    
 
     context = {
         "appversion": appversion,
@@ -69,12 +129,12 @@ def results():
 
 @app.route("/generator", methods=["POST", "GET"])
 def generator():
-    #datasetsBase = [
+    # datasetsBase = [
     #    name
     #    for name in os.listdir("./datasets")
     #    if os.path.isdir(os.path.join("./datasets", name))
-    #]
-    
+    # ]
+
     if request.method == 'POST':
         newDataset = {"settings": None, "data": []}
         form = request.form
@@ -84,7 +144,7 @@ def generator():
             "maximumProcessDuration": int(form.get("maximum-process-duration")),
             "processDispersionFactor": int(form.get("process-dispersion-factor")),
             "randomizePriority": bool(form.get("randomize-priority")),
-            #"randomSeed": int(form.get("random-seed")),
+            # "randomSeed": int(form.get("random-seed")),
             "numberOfPriorityLevels": int(form.get("number-of-priority-levels"))
         }
         newDataset['settings'] = datasetSettings
@@ -93,21 +153,23 @@ def generator():
             arriveTime = 0
             for x in range(datasetSettings.get('numberOfProcesses')):
                 if datasetSettings['randomizePriority']:
-                    priority = randint(1,datasetSettings['numberOfPriorityLevels'])
+                    priority = randint(
+                        1, datasetSettings['numberOfPriorityLevels'])
                 else:
                     priority = 1
                 if lastArrive == 0:
                     lastArrive += 1
                 else:
-                    arriveTime = randint(lastArrive, lastArrive + int((datasetSettings['processDispersionFactor']/100) * datasetSettings['maximumProcessDuration']))
+                    arriveTime = randint(lastArrive, lastArrive + int(
+                        (datasetSettings['processDispersionFactor']/100) * datasetSettings['maximumProcessDuration']))
                     lastArrive = arriveTime
                 newDataset['data'].append({
-                    "PID": x, 
+                    "PID": x,
                     "arrive-time": arriveTime,
-                    "period-time": randint(datasetSettings['minimumProcessDuration'],datasetSettings['maximumProcessDuration']), 
+                    "period-time": randint(datasetSettings['minimumProcessDuration'], datasetSettings['maximumProcessDuration']),
                     "priority": priority
-                    })
-        uniqueDatasetId= randint(10000,99999)
+                })
+        uniqueDatasetId = randint(10000, 99999)
         datenow = datetime.now().date()
         if newDataset != []:
             with open("./datasets/dataset-"+str(datenow)+"-"+str(uniqueDatasetId)+".json", "w",) as f:
