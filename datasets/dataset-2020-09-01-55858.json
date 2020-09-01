@@ -1,0 +1,42 @@
+{
+    "settings": {
+        "numberOfProcesses": 5,
+        "minimumProcessDuration": 10,
+        "maximumProcessDuration": 15,
+        "processDispersionFactor": 20,
+        "randomizePriority": true,
+        "numberOfPriorityLevels": 1
+    },
+    "data": [
+        {
+            "PID": 0,
+            "arrive-time": 0,
+            "period-time": 5,
+            "priority": 1
+        },
+        {
+            "PID": 1,
+            "arrive-time": 0,
+            "period-time": 10,
+            "priority": 1
+        },
+        {
+            "PID": 2,
+            "arrive-time": 0,
+            "period-time": 13,
+            "priority": 1
+        },
+        {
+            "PID": 3,
+            "arrive-time": 0,
+            "period-time": 18,
+            "priority": 1
+        },
+        {
+            "PID": 4,
+            "arrive-time": 0,
+            "period-time": 21,
+            "priority": 1
+        }
+    ]
+}

@@ -1,0 +1,3576 @@
+{
+    "settings": {
+        "algorithm": "FCFS",
+        "dataset": "dataset-2020-09-01-55858.json",
+        "visualization": "false",
+        "rrInterval": "",
+        "agingPriorities": "false",
+        "ppAgingInterval": ""
+    },
+    "steps": [
+        {
+            "time": 0,
+            "eventType": "simulation-start",
+            "PID": null
+        },
+        {
+            "time": 0,
+            "eventType": "arrive",
+            "PID": "0"
+        },
+        {
+            "time": 0,
+            "eventType": "arrive",
+            "PID": "1"
+        },
+        {
+            "time": 0,
+            "eventType": "arrive",
+            "PID": "2"
+        },
+        {
+            "time": 0,
+            "eventType": "arrive",
+            "PID": "3"
+        },
+        {
+            "time": 0,
+            "eventType": "arrive",
+            "PID": "4"
+        },
+        {
+            "time": 0,
+            "eventType": "processing",
+            "PID": "0"
+        },
+        {
+            "time": 1,
+            "eventType": "processing",
+            "PID": "0"
+        },
+        {
+            "time": 2,
+            "eventType": "processing",
+            "PID": "0"
+        },
+        {
+            "time": 3,
+            "eventType": "processing",
+            "PID": "0"
+        },
+        {
+            "time": 4,
+            "eventType": "processing",
+            "PID": "0"
+        },
+        {
+            "time": 4,
+            "eventType": "finished",
+            "PID": "0"
+        },
+        {
+            "time": 5,
+            "eventType": "processing",
+            "PID": "1"
+        },
+        {
+            "time": 6,
+            "eventType": "processing",
+            "PID": "1"
+        },
+        {
+            "time": 7,
+            "eventType": "processing",
+            "PID": "1"
+        },
+        {
+            "time": 8,
+            "eventType": "processing",
+            "PID": "1"
+        },
+        {
+            "time": 9,
+            "eventType": "processing",
+            "PID": "1"
+        },
+        {
+            "time": 10,
+            "eventType": "processing",
+            "PID": "1"
+        },
+        {
+            "time": 11,
+            "eventType": "processing",
+            "PID": "1"
+        },
+        {
+            "time": 12,
+            "eventType": "processing",
+            "PID": "1"
+        },
+        {
+            "time": 13,
+            "eventType": "processing",
+            "PID": "1"
+        },
+        {
+            "time": 14,
+            "eventType": "processing",
+            "PID": "1"
+        },
+        {
+            "time": 14,
+            "eventType": "finished",
+            "PID": "1"
+        },
+        {
+            "time": 15,
+            "eventType": "processing",
+            "PID": "2"
+        },
+        {
+            "time": 16,
+            "eventType": "processing",
+            "PID": "2"
+        },
+        {
+            "time": 17,
+            "eventType": "processing",
+            "PID": "2"
+        },
+        {
+            "time": 18,
+            "eventType": "processing",
+            "PID": "2"
+        },
+        {
+            "time": 19,
+            "eventType": "processing",
+            "PID": "2"
+        },
+        {
+            "time": 20,
+            "eventType": "processing",
+            "PID": "2"
+        },
+        {
+            "time": 21,
+            "eventType": "processing",
+            "PID": "2"
+        },
+        {
+            "time": 22,
+            "eventType": "processing",
+            "PID": "2"
+        },
+        {
+            "time": 23,
+            "eventType": "processing",
+            "PID": "2"
+        },
+        {
+            "time": 24,
+            "eventType": "processing",
+            "PID": "2"
+        },
+        {
+            "time": 25,
+            "eventType": "processing",
+            "PID": "2"
+        },
+        {
+            "time": 26,
+            "eventType": "processing",
+            "PID": "2"
+        },
+        {
+            "time": 27,
+            "eventType": "processing",
+            "PID": "2"
+        },
+        {
+            "time": 27,
+            "eventType": "finished",
+            "PID": "2"
+        },
+        {
+            "time": 28,
+            "eventType": "processing",
+            "PID": "3"
+        },
+        {
+            "time": 29,
+            "eventType": "processing",
+            "PID": "3"
+        },
+        {
+            "time": 30,
+            "eventType": "processing",
+            "PID": "3"
+        },
+        {
+            "time": 31,
+            "eventType": "processing",
+            "PID": "3"
+        },
+        {
+            "time": 32,
+            "eventType": "processing",
+            "PID": "3"
+        },
+        {
+            "time": 33,
+            "eventType": "processing",
+            "PID": "3"
+        },
+        {
+            "time": 34,
+            "eventType": "processing",
+            "PID": "3"
+        },
+        {
+            "time": 35,
+            "eventType": "processing",
+            "PID": "3"
+        },
+        {
+            "time": 36,
+            "eventType": "processing",
+            "PID": "3"
+        },
+        {
+            "time": 37,
+            "eventType": "processing",
+            "PID": "3"
+        },
+        {
+            "time": 38,
+            "eventType": "processing",
+            "PID": "3"
+        },
+        {
+            "time": 39,
+            "eventType": "processing",
+            "PID": "3"
+        },
+        {
+            "time": 40,
+            "eventType": "processing",
+            "PID": "3"
+        },
+        {
+            "time": 41,
+            "eventType": "processing",
+            "PID": "3"
+        },
+        {
+            "time": 42,
+            "eventType": "processing",
+            "PID": "3"
+        },
+        {
+            "time": 43,
+            "eventType": "processing",
+            "PID": "3"
+        },
+        {
+            "time": 44,
+            "eventType": "processing",
+            "PID": "3"
+        },
+        {
+            "time": 45,
+            "eventType": "processing",
+            "PID": "3"
+        },
+        {
+            "time": 45,
+            "eventType": "finished",
+            "PID": "3"
+        },
+        {
+            "time": 46,
+            "eventType": "processing",
+            "PID": "4"
+        },
+        {
+            "time": 47,
+            "eventType": "processing",
+            "PID": "4"
+        },
+        {
+            "time": 48,
+            "eventType": "processing",
+            "PID": "4"
+        },
+        {
+            "time": 49,
+            "eventType": "processing",
+            "PID": "4"
+        },
+        {
+            "time": 50,
+            "eventType": "processing",
+            "PID": "4"
+        },
+        {
+            "time": 51,
+            "eventType": "processing",
+            "PID": "4"
+        },
+        {
+            "time": 52,
+            "eventType": "processing",
+            "PID": "4"
+        },
+        {
+            "time": 53,
+            "eventType": "processing",
+            "PID": "4"
+        },
+        {
+            "time": 54,
+            "eventType": "processing",
+            "PID": "4"
+        },
+        {
+            "time": 55,
+            "eventType": "processing",
+            "PID": "4"
+        },
+        {
+            "time": 56,
+            "eventType": "processing",
+            "PID": "4"
+        },
+        {
+            "time": 57,
+            "eventType": "processing",
+            "PID": "4"
+        },
+        {
+            "time": 58,
+            "eventType": "processing",
+            "PID": "4"
+        },
+        {
+            "time": 59,
+            "eventType": "processing",
+            "PID": "4"
+        },
+        {
+            "time": 60,
+            "eventType": "processing",
+            "PID": "4"
+        },
+        {
+            "time": 61,
+            "eventType": "processing",
+            "PID": "4"
+        },
+        {
+            "time": 62,
+            "eventType": "processing",
+            "PID": "4"
+        },
+        {
+            "time": 63,
+            "eventType": "processing",
+            "PID": "4"
+        },
+        {
+            "time": 64,
+            "eventType": "processing",
+            "PID": "4"
+        },
+        {
+            "time": 65,
+            "eventType": "processing",
+            "PID": "4"
+        },
+        {
+            "time": 66,
+            "eventType": "processing",
+            "PID": "4"
+        },
+        {
+            "time": 66,
+            "eventType": "finished",
+            "PID": "4"
+        },
+        {
+            "time": 66,
+            "eventType": "simulation-finished",
+            "PID": null
+        }
+    ],
+    "values": [
+        {
+            "currentTime": "starting",
+            "toProcessCount": 5,
+            "processedCount": 0,
+            "queueList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 5,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 10,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 13,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 18,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 21,
+                    "priority": 1,
+                    "waitingTime": 0
+                }
+            ],
+            "processingList": [],
+            "processedList": [],
+            "averageWaitingTime": 0
+        },
+        {
+            "currentTime": 1,
+            "toProcessCount": 5,
+            "processedCount": 0,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [],
+            "averageWaitingTime": 0.8
+        },
+        {
+            "currentTime": 2,
+            "toProcessCount": 5,
+            "processedCount": 0,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [],
+            "averageWaitingTime": 1.6
+        },
+        {
+            "currentTime": 3,
+            "toProcessCount": 5,
+            "processedCount": 0,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [],
+            "averageWaitingTime": 2.4
+        },
+        {
+            "currentTime": 4,
+            "toProcessCount": 5,
+            "processedCount": 0,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [],
+            "averageWaitingTime": 3.2
+        },
+        {
+            "currentTime": 5,
+            "toProcessCount": 4,
+            "processedCount": 1,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                }
+            ],
+            "averageWaitingTime": 4.0
+        },
+        {
+            "currentTime": 6,
+            "toProcessCount": 4,
+            "processedCount": 1,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                }
+            ],
+            "averageWaitingTime": 4.6
+        },
+        {
+            "currentTime": 7,
+            "toProcessCount": 4,
+            "processedCount": 1,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                }
+            ],
+            "averageWaitingTime": 5.2
+        },
+        {
+            "currentTime": 8,
+            "toProcessCount": 4,
+            "processedCount": 1,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                }
+            ],
+            "averageWaitingTime": 5.8
+        },
+        {
+            "currentTime": 9,
+            "toProcessCount": 4,
+            "processedCount": 1,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                }
+            ],
+            "averageWaitingTime": 6.4
+        },
+        {
+            "currentTime": 10,
+            "toProcessCount": 4,
+            "processedCount": 1,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                }
+            ],
+            "averageWaitingTime": 7.0
+        },
+        {
+            "currentTime": 11,
+            "toProcessCount": 4,
+            "processedCount": 1,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                }
+            ],
+            "averageWaitingTime": 7.6
+        },
+        {
+            "currentTime": 12,
+            "toProcessCount": 4,
+            "processedCount": 1,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                }
+            ],
+            "averageWaitingTime": 8.2
+        },
+        {
+            "currentTime": 13,
+            "toProcessCount": 4,
+            "processedCount": 1,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                }
+            ],
+            "averageWaitingTime": 8.8
+        },
+        {
+            "currentTime": 14,
+            "toProcessCount": 4,
+            "processedCount": 1,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                }
+            ],
+            "averageWaitingTime": 9.4
+        },
+        {
+            "currentTime": 15,
+            "toProcessCount": 3,
+            "processedCount": 2,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                }
+            ],
+            "averageWaitingTime": 10.0
+        },
+        {
+            "currentTime": 16,
+            "toProcessCount": 3,
+            "processedCount": 2,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                }
+            ],
+            "averageWaitingTime": 10.4
+        },
+        {
+            "currentTime": 17,
+            "toProcessCount": 3,
+            "processedCount": 2,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                }
+            ],
+            "averageWaitingTime": 10.8
+        },
+        {
+            "currentTime": 18,
+            "toProcessCount": 3,
+            "processedCount": 2,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                }
+            ],
+            "averageWaitingTime": 11.2
+        },
+        {
+            "currentTime": 19,
+            "toProcessCount": 3,
+            "processedCount": 2,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                }
+            ],
+            "averageWaitingTime": 11.6
+        },
+        {
+            "currentTime": 20,
+            "toProcessCount": 3,
+            "processedCount": 2,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                }
+            ],
+            "averageWaitingTime": 12.0
+        },
+        {
+            "currentTime": 21,
+            "toProcessCount": 3,
+            "processedCount": 2,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                }
+            ],
+            "averageWaitingTime": 12.4
+        },
+        {
+            "currentTime": 22,
+            "toProcessCount": 3,
+            "processedCount": 2,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                }
+            ],
+            "averageWaitingTime": 12.8
+        },
+        {
+            "currentTime": 23,
+            "toProcessCount": 3,
+            "processedCount": 2,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                }
+            ],
+            "averageWaitingTime": 13.2
+        },
+        {
+            "currentTime": 24,
+            "toProcessCount": 3,
+            "processedCount": 2,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                }
+            ],
+            "averageWaitingTime": 13.6
+        },
+        {
+            "currentTime": 25,
+            "toProcessCount": 3,
+            "processedCount": 2,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                }
+            ],
+            "averageWaitingTime": 14.0
+        },
+        {
+            "currentTime": 26,
+            "toProcessCount": 3,
+            "processedCount": 2,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                }
+            ],
+            "averageWaitingTime": 14.4
+        },
+        {
+            "currentTime": 27,
+            "toProcessCount": 3,
+            "processedCount": 2,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                }
+            ],
+            "averageWaitingTime": 14.8
+        },
+        {
+            "currentTime": 28,
+            "toProcessCount": 2,
+            "processedCount": 3,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                }
+            ],
+            "averageWaitingTime": 15.2
+        },
+        {
+            "currentTime": 29,
+            "toProcessCount": 2,
+            "processedCount": 3,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                }
+            ],
+            "averageWaitingTime": 15.4
+        },
+        {
+            "currentTime": 30,
+            "toProcessCount": 2,
+            "processedCount": 3,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                }
+            ],
+            "averageWaitingTime": 15.6
+        },
+        {
+            "currentTime": 31,
+            "toProcessCount": 2,
+            "processedCount": 3,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                }
+            ],
+            "averageWaitingTime": 15.8
+        },
+        {
+            "currentTime": 32,
+            "toProcessCount": 2,
+            "processedCount": 3,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                }
+            ],
+            "averageWaitingTime": 16.0
+        },
+        {
+            "currentTime": 33,
+            "toProcessCount": 2,
+            "processedCount": 3,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                }
+            ],
+            "averageWaitingTime": 16.2
+        },
+        {
+            "currentTime": 34,
+            "toProcessCount": 2,
+            "processedCount": 3,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                }
+            ],
+            "averageWaitingTime": 16.4
+        },
+        {
+            "currentTime": 35,
+            "toProcessCount": 2,
+            "processedCount": 3,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                }
+            ],
+            "averageWaitingTime": 16.6
+        },
+        {
+            "currentTime": 36,
+            "toProcessCount": 2,
+            "processedCount": 3,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                }
+            ],
+            "averageWaitingTime": 16.8
+        },
+        {
+            "currentTime": 37,
+            "toProcessCount": 2,
+            "processedCount": 3,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                }
+            ],
+            "averageWaitingTime": 17.0
+        },
+        {
+            "currentTime": 38,
+            "toProcessCount": 2,
+            "processedCount": 3,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                }
+            ],
+            "averageWaitingTime": 17.2
+        },
+        {
+            "currentTime": 39,
+            "toProcessCount": 2,
+            "processedCount": 3,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                }
+            ],
+            "averageWaitingTime": 17.4
+        },
+        {
+            "currentTime": 40,
+            "toProcessCount": 2,
+            "processedCount": 3,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                }
+            ],
+            "averageWaitingTime": 17.6
+        },
+        {
+            "currentTime": 41,
+            "toProcessCount": 2,
+            "processedCount": 3,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                }
+            ],
+            "averageWaitingTime": 17.8
+        },
+        {
+            "currentTime": 42,
+            "toProcessCount": 2,
+            "processedCount": 3,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                }
+            ],
+            "averageWaitingTime": 18.0
+        },
+        {
+            "currentTime": 43,
+            "toProcessCount": 2,
+            "processedCount": 3,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                }
+            ],
+            "averageWaitingTime": 18.2
+        },
+        {
+            "currentTime": 44,
+            "toProcessCount": 2,
+            "processedCount": 3,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                }
+            ],
+            "averageWaitingTime": 18.4
+        },
+        {
+            "currentTime": 45,
+            "toProcessCount": 2,
+            "processedCount": 3,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                }
+            ],
+            "averageWaitingTime": 18.6
+        },
+        {
+            "currentTime": 46,
+            "toProcessCount": 1,
+            "processedCount": 4,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                }
+            ],
+            "averageWaitingTime": 18.8
+        },
+        {
+            "currentTime": 47,
+            "toProcessCount": 1,
+            "processedCount": 4,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                }
+            ],
+            "averageWaitingTime": 18.8
+        },
+        {
+            "currentTime": 48,
+            "toProcessCount": 1,
+            "processedCount": 4,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                }
+            ],
+            "averageWaitingTime": 18.8
+        },
+        {
+            "currentTime": 49,
+            "toProcessCount": 1,
+            "processedCount": 4,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                }
+            ],
+            "averageWaitingTime": 18.8
+        },
+        {
+            "currentTime": 50,
+            "toProcessCount": 1,
+            "processedCount": 4,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                }
+            ],
+            "averageWaitingTime": 18.8
+        },
+        {
+            "currentTime": 51,
+            "toProcessCount": 1,
+            "processedCount": 4,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                }
+            ],
+            "averageWaitingTime": 18.8
+        },
+        {
+            "currentTime": 52,
+            "toProcessCount": 1,
+            "processedCount": 4,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                }
+            ],
+            "averageWaitingTime": 18.8
+        },
+        {
+            "currentTime": 53,
+            "toProcessCount": 1,
+            "processedCount": 4,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                }
+            ],
+            "averageWaitingTime": 18.8
+        },
+        {
+            "currentTime": 54,
+            "toProcessCount": 1,
+            "processedCount": 4,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                }
+            ],
+            "averageWaitingTime": 18.8
+        },
+        {
+            "currentTime": 55,
+            "toProcessCount": 1,
+            "processedCount": 4,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                }
+            ],
+            "averageWaitingTime": 18.8
+        },
+        {
+            "currentTime": 56,
+            "toProcessCount": 1,
+            "processedCount": 4,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                }
+            ],
+            "averageWaitingTime": 18.8
+        },
+        {
+            "currentTime": 57,
+            "toProcessCount": 1,
+            "processedCount": 4,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                }
+            ],
+            "averageWaitingTime": 18.8
+        },
+        {
+            "currentTime": 58,
+            "toProcessCount": 1,
+            "processedCount": 4,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                }
+            ],
+            "averageWaitingTime": 18.8
+        },
+        {
+            "currentTime": 59,
+            "toProcessCount": 1,
+            "processedCount": 4,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                }
+            ],
+            "averageWaitingTime": 18.8
+        },
+        {
+            "currentTime": 60,
+            "toProcessCount": 1,
+            "processedCount": 4,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                }
+            ],
+            "averageWaitingTime": 18.8
+        },
+        {
+            "currentTime": 61,
+            "toProcessCount": 1,
+            "processedCount": 4,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                }
+            ],
+            "averageWaitingTime": 18.8
+        },
+        {
+            "currentTime": 62,
+            "toProcessCount": 1,
+            "processedCount": 4,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                }
+            ],
+            "averageWaitingTime": 18.8
+        },
+        {
+            "currentTime": 63,
+            "toProcessCount": 1,
+            "processedCount": 4,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                }
+            ],
+            "averageWaitingTime": 18.8
+        },
+        {
+            "currentTime": 64,
+            "toProcessCount": 1,
+            "processedCount": 4,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                }
+            ],
+            "averageWaitingTime": 18.8
+        },
+        {
+            "currentTime": 65,
+            "toProcessCount": 1,
+            "processedCount": 4,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                }
+            ],
+            "averageWaitingTime": 18.8
+        },
+        {
+            "currentTime": 66,
+            "toProcessCount": 1,
+            "processedCount": 4,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                }
+            ],
+            "averageWaitingTime": 18.8
+        },
+        {
+            "currentTime": 66,
+            "toProcessCount": 0,
+            "processedCount": 5,
+            "queueList": [],
+            "processingList": [],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "averageWaitingTime": 18.8
+        },
+        {
+            "currentTime": "finished",
+            "toProcessCount": 0,
+            "processedCount": 5,
+            "queueList": [],
+            "processingList": [],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 5
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 15
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 28
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 46
+                }
+            ],
+            "averageWaitingTime": 18.8
+        }
+    ]
+}

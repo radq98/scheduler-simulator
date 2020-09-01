@@ -1,0 +1,102 @@
+{
+    "settings": {
+        "numberOfProcesses": 15,
+        "minimumProcessDuration": 1,
+        "maximumProcessDuration": 15,
+        "processDispersionFactor": 175,
+        "randomizePriority": true,
+        "numberOfPriorityLevels": 1
+    },
+    "data": [
+        {
+            "PID": 0,
+            "arrive-time": 0,
+            "period-time": 7,
+            "priority": 1
+        },
+        {
+            "PID": 1,
+            "arrive-time": 2,
+            "period-time": 15,
+            "priority": 1
+        },
+        {
+            "PID": 2,
+            "arrive-time": 25,
+            "period-time": 11,
+            "priority": 1
+        },
+        {
+            "PID": 3,
+            "arrive-time": 43,
+            "period-time": 2,
+            "priority": 1
+        },
+        {
+            "PID": 4,
+            "arrive-time": 62,
+            "period-time": 3,
+            "priority": 1
+        },
+        {
+            "PID": 5,
+            "arrive-time": 77,
+            "period-time": 3,
+            "priority": 1
+        },
+        {
+            "PID": 6,
+            "arrive-time": 101,
+            "period-time": 3,
+            "priority": 1
+        },
+        {
+            "PID": 7,
+            "arrive-time": 115,
+            "period-time": 8,
+            "priority": 1
+        },
+        {
+            "PID": 8,
+            "arrive-time": 136,
+            "period-time": 14,
+            "priority": 1
+        },
+        {
+            "PID": 9,
+            "arrive-time": 156,
+            "period-time": 4,
+            "priority": 1
+        },
+        {
+            "PID": 10,
+            "arrive-time": 157,
+            "period-time": 4,
+            "priority": 1
+        },
+        {
+            "PID": 11,
+            "arrive-time": 177,
+            "period-time": 4,
+            "priority": 1
+        },
+        {
+            "PID": 12,
+            "arrive-time": 183,
+            "period-time": 9,
+            "priority": 1
+        },
+        {
+            "PID": 13,
+            "arrive-time": 191,
+            "period-time": 15,
+            "priority": 1
+        },
+        {
+            "PID": 14,
+            "arrive-time": 208,
+            "period-time": 11,
+            "priority": 1
+        }
+    ]
+}

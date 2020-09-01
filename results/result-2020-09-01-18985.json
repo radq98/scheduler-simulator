@@ -1,0 +1,112 @@
+{
+    "settings": {
+        "algorithm": "Priority planning",
+        "dataset": "dataset-2020-08-25-40271.json",
+        "visualization": "false",
+        "rrInterval": "",
+        "agingPriorities": "false",
+        "ppAgingInterval": ""
+    },
+    "steps": [
+        {
+            "time": 0,
+            "eventType": "simulation-start",
+            "PID": null
+        },
+        {
+            "time": 0,
+            "eventType": "simulation-finished",
+            "PID": null
+        }
+    ],
+    "values": [
+        {
+            "currentTime": "starting",
+            "toProcessCount": 5,
+            "processedCount": 0,
+            "queueList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 2,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 3,
+                    "period-time": 8,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 5,
+                    "period-time": 4,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 8,
+                    "period-time": 8,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 13,
+                    "period-time": 12,
+                    "priority": 1,
+                    "waitingTime": 0
+                }
+            ],
+            "processingList": [],
+            "processedList": []
+        },
+        {
+            "currentTime": "finished",
+            "toProcessCount": 5,
+            "processedCount": 0,
+            "queueList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 2,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 3,
+                    "period-time": 8,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 5,
+                    "period-time": 4,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 8,
+                    "period-time": 8,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 13,
+                    "period-time": 12,
+                    "priority": 1,
+                    "waitingTime": 0
+                }
+            ],
+            "processingList": [],
+            "processedList": []
+        }
+    ]
+}

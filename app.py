@@ -57,51 +57,120 @@ def get_results():
     def newStep(time, eventType, PID):
         return {"time": time, "eventType": eventType, "PID": PID}
     
-    def newValue(currentTime, toProcessCount, processedCount, queueList, processingList, processedList):
-        return {"currentTime": currentTime, "toProcessCount": toProcessCount, "processedCount": processedCount, "queueList": queueList, "processingList": processingList, "processedList": processedList}
+    def newValue(currentTime, toProcessCount, processedCount, queueList, processingList, processedList, averageWaitingTime):
+        return {"currentTime": currentTime, "toProcessCount": toProcessCount, "processedCount": processedCount, "queueList": queueList, "processingList": processingList, "processedList": processedList, "averageWaitingTime": averageWaitingTime}
     currentTime = 0
     toProcessCount = dataset['settings']['numberOfProcesses']
     processedCount = 0
     queueList = dataset['data']
+    initialQueueListLen = len(queueList)
     #adding necessary parameters to process objects
     for x in queueList:
         x["waitingTime"] = 0
-    
+    averageWaitingTime = 0
     processingList = []
     processedList = []
+    toRemoveFromQueue = []
+    steps.append(newStep(currentTime, "simulation-start", None))
+    values.append(newValue("starting", toProcessCount, processedCount, queueList.copy(), processingList.copy(), processedList.copy(), averageWaitingTime))
+    
+    
+    if simulationSettings["algorithm"] == "Round Robin":
+        rrCurrent = 0
+        rrIntervalControl = int(simulationSettings["rrInterval"])
+
     while toProcessCount > 0:
-        values.append(newValue(currentTime, toProcessCount, processedCount, queueList.copy(), processingList.copy(), processedList.copy()))
+
         for x in queueList:
-            if x['arrive-time'] == currentTime:
+            if int(x['arrive-time']) == int(currentTime):
                 processingList.append(x.copy())
-                queueList.remove(x)
+                toRemoveFromQueue.append(x)
                 steps.append(newStep(currentTime, "arrive", str(processingList[-1]['PID'])))
+        for x in toRemoveFromQueue:
+            queueList.remove(x)
+        toRemoveFromQueue = []
+            
         if len(processingList) > 0:
-            if len(processingList) > 1:
-                for x in processingList:
-                    if x != processingList[0]:
-                        x['waitingTime'] += 1
-            steps.append(newStep(currentTime, "processing", str(processingList[0]['PID'])))
-            processingList[0]['period-time'] -= 1
-            if processingList[0]['period-time'] == 0:
-                processedList.append(processingList[0].copy())
-                steps.append(newStep(currentTime, "finished", str(processingList[0]['PID'])))
-                processingList.pop(0)
-                toProcessCount -= 1
-                processedCount += 1
-            if toProcessCount>0:
-                currentTime += 1
+            if simulationSettings["algorithm"] == "FCFS":
+                if len(processingList) > 1:
+                    for x in processingList:
+                        if x != processingList[0]:
+                            x['waitingTime'] += 1
+                steps.append(newStep(currentTime, "processing", str(processingList[0]['PID'])))
+                processingList[0]['period-time'] -= 1
+                if processingList[0]['period-time'] == 0:
+                    processedList.append(processingList[0].copy())
+                    steps.append(newStep(currentTime, "finished", str(processingList[0]['PID'])))
+                    processingList.pop(0)
+                    toProcessCount -= 1
+                    processedCount += 1
+                if toProcessCount>0:
+                    currentTime += 1
+            
+            elif simulationSettings["algorithm"] == "Round Robin":    
+                if len(processingList) > 1:
+                    for x in processingList:
+                        if x != processingList[rrCurrent]:
+                            x['waitingTime'] += 1
+                steps.append(newStep(currentTime, "processing", str(processingList[rrCurrent]['PID'])))
+                processingList[rrCurrent]['period-time'] -= 1
+                rrIntervalControl -= 1
+
+                if processingList[rrCurrent]['period-time'] == 0:
+                    processedList.append(processingList[rrCurrent].copy())
+                    steps.append(newStep(currentTime, "finished", str(processingList[rrCurrent]['PID'])))
+                    processingList.pop(rrCurrent)
+                    toProcessCount -= 1
+                    processedCount += 1
+                    rrCurrent -= 1
+                    rrIntervalControl = 0
+                    #if rrCurrent < len(processingList)-1:
+                    #    rrCurrent += 1
+                    #else:
+                    #    rrCurrent = 0
+                
+                if rrIntervalControl == 0:
+                    if rrCurrent < len(processingList)-1:
+                        rrCurrent += 1
+                    else:
+                        rrCurrent = 0
+                    rrIntervalControl = int(simulationSettings["rrInterval"])
+                if toProcessCount>0:
+                    currentTime += 1
+            
+            elif simulationSettings["algorithm"] == "Priority planning":
+                print("Not yet PP")
         else:
             steps.append(newStep(currentTime, "no-task", None))
+            if simulationSettings["algorithm"] == "Round Robin":   
+                rrCurrent = 0
+                rrIntervalControl = int(simulationSettings["rrInterval"])
             currentTime += 1
+        #tu jest na pewno blad w liczeniu average len processingList sie zmienia
+        averageSum = 0
+        for x in processingList:
+            averageSum += int(x["waitingTime"])
+        for x in processedList:
+            averageSum += int(x["waitingTime"])
+        if (len(processingList) + len(processedList)) != 0:
+            averageWaitingTime = averageSum / (len(processingList) + len(processedList))
+        else:
+            averageWaitingTime = 0
+        values.append(newValue(currentTime, toProcessCount, processedCount, queueList.copy(), processingList.copy(), processedList.copy(), averageWaitingTime))
+    
     steps.append(newStep(currentTime, "simulation-finished", None))
-    values.append(newValue("finished", toProcessCount, processedCount, queueList.copy(), processingList.copy(), processedList.copy()))
+    values.append(newValue("finished", toProcessCount, processedCount, queueList.copy(), processingList.copy(), processedList.copy(), averageWaitingTime))
     results = {
         "settings": simulationSettings,
         "steps": steps,
         "values": values.copy()
     }
-    print(results)
+
+    uniqueDatasetId = randint(10000, 99999)
+    datenow = datetime.now().date()
+    if results != []:
+        with open("./results/result-"+str(datenow)+"-"+str(uniqueDatasetId)+".json", "w",) as f:
+            json.dump(results, f, indent=4)
 
     return jsonify(results)
 
