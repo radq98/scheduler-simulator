@@ -5,7 +5,8 @@
         "visualization": "false",
         "rrInterval": "",
         "agingPriorities": "false",
-        "ppAgingInterval": ""
+        "ppAgingInterval": "",
+        "dispatchLatency": 0
     },
     "steps": [
         {
@@ -287,7 +288,9 @@
                 }
             ],
             "processingList": [],
-            "processedList": []
+            "processedList": [],
+            "averageWaitingTime": 0,
+            "CPUusage": 0
         },
         {
             "currentTime": 1,
@@ -332,7 +335,9 @@
                     "waitingTime": 0
                 }
             ],
-            "processedList": []
+            "processedList": [],
+            "averageWaitingTime": 0.0,
+            "CPUusage": 1.0
         },
         {
             "currentTime": 2,
@@ -377,7 +382,9 @@
                     "priority": 1,
                     "waitingTime": 0
                 }
-            ]
+            ],
+            "averageWaitingTime": 0.0,
+            "CPUusage": 1.0
         },
         {
             "currentTime": 3,
@@ -422,7 +429,9 @@
                     "priority": 1,
                     "waitingTime": 0
                 }
-            ]
+            ],
+            "averageWaitingTime": 0.0,
+            "CPUusage": 0.6666666666666666
         },
         {
             "currentTime": 4,
@@ -468,7 +477,9 @@
                     "priority": 1,
                     "waitingTime": 0
                 }
-            ]
+            ],
+            "averageWaitingTime": 0.0,
+            "CPUusage": 0.75
         },
         {
             "currentTime": 5,
@@ -514,7 +525,9 @@
                     "priority": 1,
                     "waitingTime": 0
                 }
-            ]
+            ],
+            "averageWaitingTime": 0.0,
+            "CPUusage": 0.8
         },
         {
             "currentTime": 6,
@@ -560,7 +573,9 @@
                     "priority": 1,
                     "waitingTime": 0
                 }
-            ]
+            ],
+            "averageWaitingTime": 0.3333333333333333,
+            "CPUusage": 0.8333333333333334
         },
         {
             "currentTime": 7,
@@ -606,7 +621,9 @@
                     "priority": 1,
                     "waitingTime": 0
                 }
-            ]
+            ],
+            "averageWaitingTime": 0.6666666666666666,
+            "CPUusage": 0.8571428571428571
         },
         {
             "currentTime": 8,
@@ -652,7 +669,9 @@
                     "priority": 1,
                     "waitingTime": 0
                 }
-            ]
+            ],
+            "averageWaitingTime": 1.0,
+            "CPUusage": 0.875
         },
         {
             "currentTime": 9,
@@ -698,7 +717,9 @@
                     "priority": 1,
                     "waitingTime": 0
                 }
-            ]
+            ],
+            "averageWaitingTime": 1.25,
+            "CPUusage": 0.8888888888888888
         },
         {
             "currentTime": 10,
@@ -744,7 +765,9 @@
                     "priority": 1,
                     "waitingTime": 0
                 }
-            ]
+            ],
+            "averageWaitingTime": 1.75,
+            "CPUusage": 0.9
         },
         {
             "currentTime": 11,
@@ -790,7 +813,9 @@
                     "priority": 1,
                     "waitingTime": 0
                 }
-            ]
+            ],
+            "averageWaitingTime": 2.25,
+            "CPUusage": 0.9090909090909091
         },
         {
             "currentTime": 12,
@@ -836,7 +861,9 @@
                     "priority": 1,
                     "waitingTime": 0
                 }
-            ]
+            ],
+            "averageWaitingTime": 2.5,
+            "CPUusage": 0.9166666666666666
         },
         {
             "currentTime": 13,
@@ -882,7 +909,9 @@
                     "priority": 1,
                     "waitingTime": 0
                 }
-            ]
+            ],
+            "averageWaitingTime": 2.75,
+            "CPUusage": 0.9230769230769231
         },
         {
             "currentTime": 14,
@@ -927,7 +956,9 @@
                     "priority": 1,
                     "waitingTime": 0
                 }
-            ]
+            ],
+            "averageWaitingTime": 2.6,
+            "CPUusage": 0.9285714285714286
         },
         {
             "currentTime": 15,
@@ -972,7 +1003,9 @@
                     "priority": 1,
                     "waitingTime": 6
                 }
-            ]
+            ],
+            "averageWaitingTime": 3.0,
+            "CPUusage": 0.9333333333333333
         },
         {
             "currentTime": 16,
@@ -1017,7 +1050,9 @@
                     "priority": 1,
                     "waitingTime": 6
                 }
-            ]
+            ],
+            "averageWaitingTime": 3.2,
+            "CPUusage": 0.9375
         },
         {
             "currentTime": 17,
@@ -1062,7 +1097,9 @@
                     "priority": 1,
                     "waitingTime": 6
                 }
-            ]
+            ],
+            "averageWaitingTime": 3.4,
+            "CPUusage": 0.9411764705882353
         },
         {
             "currentTime": 18,
@@ -1107,7 +1144,9 @@
                     "priority": 1,
                     "waitingTime": 6
                 }
-            ]
+            ],
+            "averageWaitingTime": 3.6,
+            "CPUusage": 0.9444444444444444
         },
         {
             "currentTime": 19,
@@ -1152,7 +1191,9 @@
                     "priority": 1,
                     "waitingTime": 6
                 }
-            ]
+            ],
+            "averageWaitingTime": 3.8,
+            "CPUusage": 0.9473684210526315
         },
         {
             "currentTime": 20,
@@ -1197,7 +1238,9 @@
                     "priority": 1,
                     "waitingTime": 6
                 }
-            ]
+            ],
+            "averageWaitingTime": 4.0,
+            "CPUusage": 0.95
         },
         {
             "currentTime": 21,
@@ -1242,7 +1285,9 @@
                     "priority": 1,
                     "waitingTime": 6
                 }
-            ]
+            ],
+            "averageWaitingTime": 4.2,
+            "CPUusage": 0.9523809523809523
         },
         {
             "currentTime": 22,
@@ -1287,7 +1332,9 @@
                     "priority": 1,
                     "waitingTime": 6
                 }
-            ]
+            ],
+            "averageWaitingTime": 4.4,
+            "CPUusage": 0.9545454545454546
         },
         {
             "currentTime": 23,
@@ -1332,7 +1379,9 @@
                     "priority": 1,
                     "waitingTime": 7
                 }
-            ]
+            ],
+            "averageWaitingTime": 4.6,
+            "CPUusage": 0.9565217391304348
         },
         {
             "currentTime": 24,
@@ -1377,7 +1426,9 @@
                     "priority": 1,
                     "waitingTime": 7
                 }
-            ]
+            ],
+            "averageWaitingTime": 4.6,
+            "CPUusage": 0.9583333333333334
         },
         {
             "currentTime": 25,
@@ -1422,7 +1473,9 @@
                     "priority": 1,
                     "waitingTime": 7
                 }
-            ]
+            ],
+            "averageWaitingTime": 4.6,
+            "CPUusage": 0.96
         },
         {
             "currentTime": 26,
@@ -1467,7 +1520,9 @@
                     "priority": 1,
                     "waitingTime": 7
                 }
-            ]
+            ],
+            "averageWaitingTime": 4.6,
+            "CPUusage": 0.9615384615384616
         },
         {
             "currentTime": 27,
@@ -1512,7 +1567,9 @@
                     "priority": 1,
                     "waitingTime": 7
                 }
-            ]
+            ],
+            "averageWaitingTime": 4.6,
+            "CPUusage": 0.9629629629629629
         },
         {
             "currentTime": 28,
@@ -1557,7 +1614,9 @@
                     "priority": 1,
                     "waitingTime": 7
                 }
-            ]
+            ],
+            "averageWaitingTime": 4.6,
+            "CPUusage": 0.9642857142857143
         },
         {
             "currentTime": 29,
@@ -1602,7 +1661,9 @@
                     "priority": 1,
                     "waitingTime": 7
                 }
-            ]
+            ],
+            "averageWaitingTime": 4.6,
+            "CPUusage": 0.9655172413793104
         },
         {
             "currentTime": 30,
@@ -1647,7 +1708,9 @@
                     "priority": 1,
                     "waitingTime": 7
                 }
-            ]
+            ],
+            "averageWaitingTime": 4.6,
+            "CPUusage": 0.9666666666666667
         },
         {
             "currentTime": 31,
@@ -1692,7 +1755,9 @@
                     "priority": 1,
                     "waitingTime": 7
                 }
-            ]
+            ],
+            "averageWaitingTime": 4.6,
+            "CPUusage": 0.967741935483871
         },
         {
             "currentTime": 32,
@@ -1737,7 +1802,9 @@
                     "priority": 1,
                     "waitingTime": 7
                 }
-            ]
+            ],
+            "averageWaitingTime": 4.6,
+            "CPUusage": 0.96875
         },
         {
             "currentTime": 33,
@@ -1782,7 +1849,9 @@
                     "priority": 1,
                     "waitingTime": 7
                 }
-            ]
+            ],
+            "averageWaitingTime": 4.6,
+            "CPUusage": 0.9696969696969697
         },
         {
             "currentTime": 34,
@@ -1827,7 +1896,9 @@
                     "priority": 1,
                     "waitingTime": 7
                 }
-            ]
+            ],
+            "averageWaitingTime": 4.6,
+            "CPUusage": 0.9705882352941176
         },
         {
             "currentTime": 34,
@@ -1871,7 +1942,9 @@
                     "priority": 1,
                     "waitingTime": 10
                 }
-            ]
+            ],
+            "averageWaitingTime": 4.6,
+            "CPUusage": 0.9714285714285714
         },
         {
             "currentTime": "finished",
@@ -1915,7 +1988,9 @@
                     "priority": 1,
                     "waitingTime": 10
                 }
-            ]
+            ],
+            "averageWaitingTime": 4.6,
+            "CPUusage": 0.9714285714285714
         }
     ]
 }

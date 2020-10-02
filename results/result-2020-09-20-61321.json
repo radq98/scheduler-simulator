@@ -2,12 +2,17 @@
     "settings": {
         "algorithm": "FCFS",
         "dataset": "dataset-2020-08-25-40271.json",
-        "visualization": "false",
+        "visualization": "true",
         "rrInterval": "",
         "agingPriorities": "false",
         "ppAgingInterval": ""
     },
     "steps": [
+        {
+            "time": 0,
+            "eventType": "simulation-start",
+            "PID": null
+        },
         {
             "time": 0,
             "eventType": "arrive",
@@ -241,6 +246,51 @@
     ],
     "values": [
         {
+            "currentTime": "starting",
+            "toProcessCount": 5,
+            "processedCount": 0,
+            "queueList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 2,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 3,
+                    "period-time": 8,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 5,
+                    "period-time": 4,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 8,
+                    "period-time": 8,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 4,
+                    "arrive-time": 13,
+                    "period-time": 12,
+                    "priority": 1,
+                    "waitingTime": 0
+                }
+            ],
+            "processingList": [],
+            "processedList": [],
+            "averageWaitingTime": 0
+        },
+        {
             "currentTime": 1,
             "toProcessCount": 5,
             "processedCount": 0,
@@ -283,7 +333,8 @@
                     "waitingTime": 0
                 }
             ],
-            "processedList": []
+            "processedList": [],
+            "averageWaitingTime": 0.0
         },
         {
             "currentTime": 2,
@@ -328,7 +379,8 @@
                     "priority": 1,
                     "waitingTime": 0
                 }
-            ]
+            ],
+            "averageWaitingTime": 0.0
         },
         {
             "currentTime": 3,
@@ -373,7 +425,8 @@
                     "priority": 1,
                     "waitingTime": 0
                 }
-            ]
+            ],
+            "averageWaitingTime": 0.0
         },
         {
             "currentTime": 4,
@@ -419,7 +472,8 @@
                     "priority": 1,
                     "waitingTime": 0
                 }
-            ]
+            ],
+            "averageWaitingTime": 0.0
         },
         {
             "currentTime": 5,
@@ -465,7 +519,8 @@
                     "priority": 1,
                     "waitingTime": 0
                 }
-            ]
+            ],
+            "averageWaitingTime": 0.0
         },
         {
             "currentTime": 6,
@@ -511,7 +566,8 @@
                     "priority": 1,
                     "waitingTime": 0
                 }
-            ]
+            ],
+            "averageWaitingTime": 0.3333333333333333
         },
         {
             "currentTime": 7,
@@ -557,7 +613,8 @@
                     "priority": 1,
                     "waitingTime": 0
                 }
-            ]
+            ],
+            "averageWaitingTime": 0.6666666666666666
         },
         {
             "currentTime": 8,
@@ -603,7 +660,8 @@
                     "priority": 1,
                     "waitingTime": 0
                 }
-            ]
+            ],
+            "averageWaitingTime": 1.0
         },
         {
             "currentTime": 9,
@@ -649,7 +707,8 @@
                     "priority": 1,
                     "waitingTime": 0
                 }
-            ]
+            ],
+            "averageWaitingTime": 1.25
         },
         {
             "currentTime": 10,
@@ -695,7 +754,8 @@
                     "priority": 1,
                     "waitingTime": 0
                 }
-            ]
+            ],
+            "averageWaitingTime": 1.75
         },
         {
             "currentTime": 11,
@@ -741,7 +801,8 @@
                     "priority": 1,
                     "waitingTime": 0
                 }
-            ]
+            ],
+            "averageWaitingTime": 2.25
         },
         {
             "currentTime": 12,
@@ -787,7 +848,8 @@
                     "priority": 1,
                     "waitingTime": 0
                 }
-            ]
+            ],
+            "averageWaitingTime": 2.5
         },
         {
             "currentTime": 13,
@@ -833,7 +895,8 @@
                     "priority": 1,
                     "waitingTime": 0
                 }
-            ]
+            ],
+            "averageWaitingTime": 2.75
         },
         {
             "currentTime": 14,
@@ -878,7 +941,8 @@
                     "priority": 1,
                     "waitingTime": 0
                 }
-            ]
+            ],
+            "averageWaitingTime": 2.6
         },
         {
             "currentTime": 15,
@@ -923,7 +987,8 @@
                     "priority": 1,
                     "waitingTime": 6
                 }
-            ]
+            ],
+            "averageWaitingTime": 3.0
         },
         {
             "currentTime": 16,
@@ -968,7 +1033,8 @@
                     "priority": 1,
                     "waitingTime": 6
                 }
-            ]
+            ],
+            "averageWaitingTime": 3.2
         },
         {
             "currentTime": 17,
@@ -1013,7 +1079,8 @@
                     "priority": 1,
                     "waitingTime": 6
                 }
-            ]
+            ],
+            "averageWaitingTime": 3.4
         },
         {
             "currentTime": 18,
@@ -1058,7 +1125,8 @@
                     "priority": 1,
                     "waitingTime": 6
                 }
-            ]
+            ],
+            "averageWaitingTime": 3.6
         },
         {
             "currentTime": 19,
@@ -1103,7 +1171,8 @@
                     "priority": 1,
                     "waitingTime": 6
                 }
-            ]
+            ],
+            "averageWaitingTime": 3.8
         },
         {
             "currentTime": 20,
@@ -1148,7 +1217,8 @@
                     "priority": 1,
                     "waitingTime": 6
                 }
-            ]
+            ],
+            "averageWaitingTime": 4.0
         },
         {
             "currentTime": 21,
@@ -1193,7 +1263,8 @@
                     "priority": 1,
                     "waitingTime": 6
                 }
-            ]
+            ],
+            "averageWaitingTime": 4.2
         },
         {
             "currentTime": 22,
@@ -1238,7 +1309,8 @@
                     "priority": 1,
                     "waitingTime": 6
                 }
-            ]
+            ],
+            "averageWaitingTime": 4.4
         },
         {
             "currentTime": 23,
@@ -1283,7 +1355,8 @@
                     "priority": 1,
                     "waitingTime": 7
                 }
-            ]
+            ],
+            "averageWaitingTime": 4.6
         },
         {
             "currentTime": 24,
@@ -1328,7 +1401,8 @@
                     "priority": 1,
                     "waitingTime": 7
                 }
-            ]
+            ],
+            "averageWaitingTime": 4.6
         },
         {
             "currentTime": 25,
@@ -1373,7 +1447,8 @@
                     "priority": 1,
                     "waitingTime": 7
                 }
-            ]
+            ],
+            "averageWaitingTime": 4.6
         },
         {
             "currentTime": 26,
@@ -1418,7 +1493,8 @@
                     "priority": 1,
                     "waitingTime": 7
                 }
-            ]
+            ],
+            "averageWaitingTime": 4.6
         },
         {
             "currentTime": 27,
@@ -1463,7 +1539,8 @@
                     "priority": 1,
                     "waitingTime": 7
                 }
-            ]
+            ],
+            "averageWaitingTime": 4.6
         },
         {
             "currentTime": 28,
@@ -1508,7 +1585,8 @@
                     "priority": 1,
                     "waitingTime": 7
                 }
-            ]
+            ],
+            "averageWaitingTime": 4.6
         },
         {
             "currentTime": 29,
@@ -1553,7 +1631,8 @@
                     "priority": 1,
                     "waitingTime": 7
                 }
-            ]
+            ],
+            "averageWaitingTime": 4.6
         },
         {
             "currentTime": 30,
@@ -1598,7 +1677,8 @@
                     "priority": 1,
                     "waitingTime": 7
                 }
-            ]
+            ],
+            "averageWaitingTime": 4.6
         },
         {
             "currentTime": 31,
@@ -1643,7 +1723,8 @@
                     "priority": 1,
                     "waitingTime": 7
                 }
-            ]
+            ],
+            "averageWaitingTime": 4.6
         },
         {
             "currentTime": 32,
@@ -1688,7 +1769,8 @@
                     "priority": 1,
                     "waitingTime": 7
                 }
-            ]
+            ],
+            "averageWaitingTime": 4.6
         },
         {
             "currentTime": 33,
@@ -1733,7 +1815,8 @@
                     "priority": 1,
                     "waitingTime": 7
                 }
-            ]
+            ],
+            "averageWaitingTime": 4.6
         },
         {
             "currentTime": 34,
@@ -1778,7 +1861,8 @@
                     "priority": 1,
                     "waitingTime": 7
                 }
-            ]
+            ],
+            "averageWaitingTime": 4.6
         },
         {
             "currentTime": 34,
@@ -1822,7 +1906,8 @@
                     "priority": 1,
                     "waitingTime": 10
                 }
-            ]
+            ],
+            "averageWaitingTime": 4.6
         },
         {
             "currentTime": "finished",
@@ -1866,7 +1951,8 @@
                     "priority": 1,
                     "waitingTime": 10
                 }
-            ]
+            ],
+            "averageWaitingTime": 4.6
         }
     ]
 }

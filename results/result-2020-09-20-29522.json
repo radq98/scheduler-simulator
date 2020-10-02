@@ -2,7 +2,7 @@
     "settings": {
         "algorithm": "FCFS",
         "dataset": "dataset-2020-08-25-40271.json",
-        "visualization": "false",
+        "visualization": "true",
         "rrInterval": "",
         "agingPriorities": "false",
         "ppAgingInterval": ""
@@ -287,10 +287,11 @@
                 }
             ],
             "processingList": [],
-            "processedList": []
+            "processedList": [],
+            "averageWaitingTime": 0
         },
         {
-            "currentTime": 0,
+            "currentTime": 1,
             "toProcessCount": 5,
             "processedCount": 0,
             "queueList": [
@@ -332,52 +333,8 @@
                     "waitingTime": 0
                 }
             ],
-            "processedList": []
-        },
-        {
-            "currentTime": 1,
-            "toProcessCount": 4,
-            "processedCount": 1,
-            "queueList": [
-                {
-                    "PID": 1,
-                    "arrive-time": 3,
-                    "period-time": 8,
-                    "priority": 1,
-                    "waitingTime": 0
-                },
-                {
-                    "PID": 2,
-                    "arrive-time": 5,
-                    "period-time": 4,
-                    "priority": 1,
-                    "waitingTime": 0
-                },
-                {
-                    "PID": 3,
-                    "arrive-time": 8,
-                    "period-time": 8,
-                    "priority": 1,
-                    "waitingTime": 0
-                },
-                {
-                    "PID": 4,
-                    "arrive-time": 13,
-                    "period-time": 12,
-                    "priority": 1,
-                    "waitingTime": 0
-                }
-            ],
-            "processingList": [],
-            "processedList": [
-                {
-                    "PID": 0,
-                    "arrive-time": 0,
-                    "period-time": 0,
-                    "priority": 1,
-                    "waitingTime": 0
-                }
-            ]
+            "processedList": [],
+            "averageWaitingTime": 0.0
         },
         {
             "currentTime": 2,
@@ -422,13 +379,21 @@
                     "priority": 1,
                     "waitingTime": 0
                 }
-            ]
+            ],
+            "averageWaitingTime": 0.0
         },
         {
             "currentTime": 3,
             "toProcessCount": 4,
             "processedCount": 1,
             "queueList": [
+                {
+                    "PID": 1,
+                    "arrive-time": 3,
+                    "period-time": 8,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
                 {
                     "PID": 2,
                     "arrive-time": 5,
@@ -451,15 +416,7 @@
                     "waitingTime": 0
                 }
             ],
-            "processingList": [
-                {
-                    "PID": 1,
-                    "arrive-time": 3,
-                    "period-time": 0,
-                    "priority": 1,
-                    "waitingTime": 0
-                }
-            ],
+            "processingList": [],
             "processedList": [
                 {
                     "PID": 0,
@@ -468,7 +425,8 @@
                     "priority": 1,
                     "waitingTime": 0
                 }
-            ]
+            ],
+            "averageWaitingTime": 0.0
         },
         {
             "currentTime": 4,
@@ -514,13 +472,21 @@
                     "priority": 1,
                     "waitingTime": 0
                 }
-            ]
+            ],
+            "averageWaitingTime": 0.0
         },
         {
             "currentTime": 5,
             "toProcessCount": 4,
             "processedCount": 1,
             "queueList": [
+                {
+                    "PID": 2,
+                    "arrive-time": 5,
+                    "period-time": 4,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
                 {
                     "PID": 3,
                     "arrive-time": 8,
@@ -543,13 +509,6 @@
                     "period-time": 0,
                     "priority": 1,
                     "waitingTime": 0
-                },
-                {
-                    "PID": 2,
-                    "arrive-time": 5,
-                    "period-time": 0,
-                    "priority": 1,
-                    "waitingTime": 6
                 }
             ],
             "processedList": [
@@ -560,7 +519,8 @@
                     "priority": 1,
                     "waitingTime": 0
                 }
-            ]
+            ],
+            "averageWaitingTime": 0.0
         },
         {
             "currentTime": 6,
@@ -606,7 +566,8 @@
                     "priority": 1,
                     "waitingTime": 0
                 }
-            ]
+            ],
+            "averageWaitingTime": 0.3333333333333333
         },
         {
             "currentTime": 7,
@@ -652,13 +613,21 @@
                     "priority": 1,
                     "waitingTime": 0
                 }
-            ]
+            ],
+            "averageWaitingTime": 0.6666666666666666
         },
         {
             "currentTime": 8,
             "toProcessCount": 4,
             "processedCount": 1,
             "queueList": [
+                {
+                    "PID": 3,
+                    "arrive-time": 8,
+                    "period-time": 8,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
                 {
                     "PID": 4,
                     "arrive-time": 13,
@@ -681,13 +650,6 @@
                     "period-time": 0,
                     "priority": 1,
                     "waitingTime": 6
-                },
-                {
-                    "PID": 3,
-                    "arrive-time": 8,
-                    "period-time": 0,
-                    "priority": 1,
-                    "waitingTime": 7
                 }
             ],
             "processedList": [
@@ -698,7 +660,8 @@
                     "priority": 1,
                     "waitingTime": 0
                 }
-            ]
+            ],
+            "averageWaitingTime": 1.0
         },
         {
             "currentTime": 9,
@@ -744,12 +707,13 @@
                     "priority": 1,
                     "waitingTime": 0
                 }
-            ]
+            ],
+            "averageWaitingTime": 1.25
         },
         {
             "currentTime": 10,
-            "toProcessCount": 3,
-            "processedCount": 2,
+            "toProcessCount": 4,
+            "processedCount": 1,
             "queueList": [
                 {
                     "PID": 4,
@@ -760,6 +724,13 @@
                 }
             ],
             "processingList": [
+                {
+                    "PID": 1,
+                    "arrive-time": 3,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
                 {
                     "PID": 2,
                     "arrive-time": 5,
@@ -782,15 +753,9 @@
                     "period-time": 0,
                     "priority": 1,
                     "waitingTime": 0
-                },
-                {
-                    "PID": 1,
-                    "arrive-time": 3,
-                    "period-time": 0,
-                    "priority": 1,
-                    "waitingTime": 0
                 }
-            ]
+            ],
+            "averageWaitingTime": 1.75
         },
         {
             "currentTime": 11,
@@ -836,7 +801,8 @@
                     "priority": 1,
                     "waitingTime": 0
                 }
-            ]
+            ],
+            "averageWaitingTime": 2.25
         },
         {
             "currentTime": 12,
@@ -882,10 +848,58 @@
                     "priority": 1,
                     "waitingTime": 0
                 }
-            ]
+            ],
+            "averageWaitingTime": 2.5
         },
         {
             "currentTime": 13,
+            "toProcessCount": 3,
+            "processedCount": 2,
+            "queueList": [
+                {
+                    "PID": 4,
+                    "arrive-time": 13,
+                    "period-time": 12,
+                    "priority": 1,
+                    "waitingTime": 0
+                }
+            ],
+            "processingList": [
+                {
+                    "PID": 2,
+                    "arrive-time": 5,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 6
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 8,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 7
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 3,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                }
+            ],
+            "averageWaitingTime": 2.75
+        },
+        {
+            "currentTime": 14,
             "toProcessCount": 3,
             "processedCount": 2,
             "queueList": [],
@@ -927,52 +941,8 @@
                     "priority": 1,
                     "waitingTime": 0
                 }
-            ]
-        },
-        {
-            "currentTime": 14,
-            "toProcessCount": 2,
-            "processedCount": 3,
-            "queueList": [],
-            "processingList": [
-                {
-                    "PID": 3,
-                    "arrive-time": 8,
-                    "period-time": 0,
-                    "priority": 1,
-                    "waitingTime": 7
-                },
-                {
-                    "PID": 4,
-                    "arrive-time": 13,
-                    "period-time": 0,
-                    "priority": 1,
-                    "waitingTime": 10
-                }
             ],
-            "processedList": [
-                {
-                    "PID": 0,
-                    "arrive-time": 0,
-                    "period-time": 0,
-                    "priority": 1,
-                    "waitingTime": 0
-                },
-                {
-                    "PID": 1,
-                    "arrive-time": 3,
-                    "period-time": 0,
-                    "priority": 1,
-                    "waitingTime": 0
-                },
-                {
-                    "PID": 2,
-                    "arrive-time": 5,
-                    "period-time": 0,
-                    "priority": 1,
-                    "waitingTime": 6
-                }
-            ]
+            "averageWaitingTime": 2.6
         },
         {
             "currentTime": 15,
@@ -1017,7 +987,8 @@
                     "priority": 1,
                     "waitingTime": 6
                 }
-            ]
+            ],
+            "averageWaitingTime": 3.0
         },
         {
             "currentTime": 16,
@@ -1062,7 +1033,8 @@
                     "priority": 1,
                     "waitingTime": 6
                 }
-            ]
+            ],
+            "averageWaitingTime": 3.2
         },
         {
             "currentTime": 17,
@@ -1107,7 +1079,8 @@
                     "priority": 1,
                     "waitingTime": 6
                 }
-            ]
+            ],
+            "averageWaitingTime": 3.4
         },
         {
             "currentTime": 18,
@@ -1152,7 +1125,8 @@
                     "priority": 1,
                     "waitingTime": 6
                 }
-            ]
+            ],
+            "averageWaitingTime": 3.6
         },
         {
             "currentTime": 19,
@@ -1197,7 +1171,8 @@
                     "priority": 1,
                     "waitingTime": 6
                 }
-            ]
+            ],
+            "averageWaitingTime": 3.8
         },
         {
             "currentTime": 20,
@@ -1242,7 +1217,8 @@
                     "priority": 1,
                     "waitingTime": 6
                 }
-            ]
+            ],
+            "averageWaitingTime": 4.0
         },
         {
             "currentTime": 21,
@@ -1287,14 +1263,22 @@
                     "priority": 1,
                     "waitingTime": 6
                 }
-            ]
+            ],
+            "averageWaitingTime": 4.2
         },
         {
             "currentTime": 22,
-            "toProcessCount": 1,
-            "processedCount": 4,
+            "toProcessCount": 2,
+            "processedCount": 3,
             "queueList": [],
             "processingList": [
+                {
+                    "PID": 3,
+                    "arrive-time": 8,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 7
+                },
                 {
                     "PID": 4,
                     "arrive-time": 13,
@@ -1324,15 +1308,9 @@
                     "period-time": 0,
                     "priority": 1,
                     "waitingTime": 6
-                },
-                {
-                    "PID": 3,
-                    "arrive-time": 8,
-                    "period-time": 0,
-                    "priority": 1,
-                    "waitingTime": 7
                 }
-            ]
+            ],
+            "averageWaitingTime": 4.4
         },
         {
             "currentTime": 23,
@@ -1377,7 +1355,8 @@
                     "priority": 1,
                     "waitingTime": 7
                 }
-            ]
+            ],
+            "averageWaitingTime": 4.6
         },
         {
             "currentTime": 24,
@@ -1422,7 +1401,8 @@
                     "priority": 1,
                     "waitingTime": 7
                 }
-            ]
+            ],
+            "averageWaitingTime": 4.6
         },
         {
             "currentTime": 25,
@@ -1467,7 +1447,8 @@
                     "priority": 1,
                     "waitingTime": 7
                 }
-            ]
+            ],
+            "averageWaitingTime": 4.6
         },
         {
             "currentTime": 26,
@@ -1512,7 +1493,8 @@
                     "priority": 1,
                     "waitingTime": 7
                 }
-            ]
+            ],
+            "averageWaitingTime": 4.6
         },
         {
             "currentTime": 27,
@@ -1557,7 +1539,8 @@
                     "priority": 1,
                     "waitingTime": 7
                 }
-            ]
+            ],
+            "averageWaitingTime": 4.6
         },
         {
             "currentTime": 28,
@@ -1602,7 +1585,8 @@
                     "priority": 1,
                     "waitingTime": 7
                 }
-            ]
+            ],
+            "averageWaitingTime": 4.6
         },
         {
             "currentTime": 29,
@@ -1647,7 +1631,8 @@
                     "priority": 1,
                     "waitingTime": 7
                 }
-            ]
+            ],
+            "averageWaitingTime": 4.6
         },
         {
             "currentTime": 30,
@@ -1692,7 +1677,8 @@
                     "priority": 1,
                     "waitingTime": 7
                 }
-            ]
+            ],
+            "averageWaitingTime": 4.6
         },
         {
             "currentTime": 31,
@@ -1737,7 +1723,8 @@
                     "priority": 1,
                     "waitingTime": 7
                 }
-            ]
+            ],
+            "averageWaitingTime": 4.6
         },
         {
             "currentTime": 32,
@@ -1782,7 +1769,8 @@
                     "priority": 1,
                     "waitingTime": 7
                 }
-            ]
+            ],
+            "averageWaitingTime": 4.6
         },
         {
             "currentTime": 33,
@@ -1827,10 +1815,57 @@
                     "priority": 1,
                     "waitingTime": 7
                 }
-            ]
+            ],
+            "averageWaitingTime": 4.6
         },
         {
-            "currentTime": 33,
+            "currentTime": 34,
+            "toProcessCount": 1,
+            "processedCount": 4,
+            "queueList": [],
+            "processingList": [
+                {
+                    "PID": 4,
+                    "arrive-time": 13,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 10
+                }
+            ],
+            "processedList": [
+                {
+                    "PID": 0,
+                    "arrive-time": 0,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 1,
+                    "arrive-time": 3,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 0
+                },
+                {
+                    "PID": 2,
+                    "arrive-time": 5,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 6
+                },
+                {
+                    "PID": 3,
+                    "arrive-time": 8,
+                    "period-time": 0,
+                    "priority": 1,
+                    "waitingTime": 7
+                }
+            ],
+            "averageWaitingTime": 4.6
+        },
+        {
+            "currentTime": 34,
             "toProcessCount": 0,
             "processedCount": 5,
             "queueList": [],
@@ -1871,7 +1906,8 @@
                     "priority": 1,
                     "waitingTime": 10
                 }
-            ]
+            ],
+            "averageWaitingTime": 4.6
         },
         {
             "currentTime": "finished",
@@ -1915,7 +1951,8 @@
                     "priority": 1,
                     "waitingTime": 10
                 }
-            ]
+            ],
+            "averageWaitingTime": 4.6
         }
     ]
 }
