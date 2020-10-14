@@ -71,7 +71,7 @@ def get_results():
     processedList = []
     toRemoveFromQueue = []
     steps.append(newStep(currentTime, "simulation-start", None))
-    values.append(newValue("starting", toProcessCount, processedCount, queueList.copy(), processingList.copy(), processedList.copy(), averageWaitingTime, CPUusage))
+    values.append(newValue("start", toProcessCount, processedCount, queueList.copy(), processingList.copy(), processedList.copy(), averageWaitingTime, CPUusage))
     
     dispatching = False
     currentDispatchTime = 0

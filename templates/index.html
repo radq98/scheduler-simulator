@@ -94,8 +94,36 @@
       </div>
     </form>
   </div>
-  <div class="col-sm-6">
-    <h5>Live results</h5>
+  <div class="col-sm-6 align-self-center">
+    <div id="liveChartContainer" class="form-group row" style="margin-right: 1px;">
+      <canvas id="liveWaitingTimeChartCanvas" width=max height=220px
+        style="background-color: rgba(255, 255, 255, 0.3); margin-right: 15px;"></canvas>
+      <script src="/static/js/charts/liveWaitingTime-chart.js"></script>
+
+    </div>
+    <div class="form-group row">
+      <label for="data_streams_count" id="samples-amount-label" class="col-sm-8 col-form-label">Number of samples on
+        the chart</label>
+      <div class="col-sm-4">
+        <select class="form-control" type="number" id="samples-amount" name="chart_samples_amount">
+          <option>Unlimited</option>
+          <option>25</option>
+          <option>50</option>
+          <option>75</option>
+          <option>100</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="visualization-speed" id="visualization-speed-label" class="col-sm-8 col-form-label">Visualization speed</label>
+      <div class="col-sm-4">
+        <select class="form-control" type="number" id="visualization-speed" name="visualization-speed" disabled>
+          <option>Fast</option>
+          <option>Medium</option>
+          <option>Slow</option>
+        </select>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -110,8 +138,36 @@ var formObjects = {
   agingPriorities: document.getElementById("form-aging-priorities"),
   ppAgingInterval: document.getElementById("form-pp-aging-interval"),
   startButton: document.getElementById("start-button"),
-  dispatchLatency: document.getElementById("form-dispatch-latency")
+  dispatchLatency: document.getElementById("form-dispatch-latency"),
+  samplesLimit: document.getElementById("samples-amount")
 }
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function delayedGreeting(data) {
+  for (const element of data.values) {
+          liveWaitingTimeChart.data.labels.push(element.currentTime);
+          liveWaitingTimeChart.data.datasets[0].data.push(element.averageWaitingTime);
+          if(formObjects.visualization.checked) {
+            await sleep(500);
+            liveWaitingTimeChart.update();
+            doSamplesLimit(formObjects.samplesLimit.value);
+          }
+        }
+        liveWaitingTimeChart.update();
+        FormUnlock()
+}
+
+function FormUnlock() {
+        formObjects.algorithm.disabled = false;
+        formObjects.dataset.disabled = false;
+        formObjects.visualization.disabled = false;
+        formObjects.rrInterval.disabled = false;
+        formObjects.agingPriorities.disabled = false;
+        formObjects.ppAgingInterval.disabled = false;
+        formObjects.startButton.disabled = false;
+    }
   $(function() {
     $('#start-button').bind('click', function() {
       $.getJSON($SCRIPT_ROOT + '/_get_results', {
@@ -124,6 +180,7 @@ var formObjects = {
         dispatchLatency: formObjects.dispatchLatency.value
       }, function(data) {
         console.log(data);
+        delayedGreeting(data)
       });
       return false;
     });

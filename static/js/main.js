@@ -52,9 +52,20 @@ $(document).ready(function () {
 
     $('#start-button').on('click', function (event) {
         console.log("Begin test");
+        clearLiveWaitingTimeChart();
+        var color = getRandomColor();
+        var newDataset = {
+            label: "Dataset 1",
+            data: [],
+            backgroundColor: color,
+            borderColor: color,
+            fill: false
+        };
+        liveWaitingTimeChart.data.datasets.push(newDataset);
+        liveWaitingTimeChart.update();
         if (formObjects.visualization.checked) {
             FormLock();
-        } 
+        }
     });
 
     var invalidChars = [
