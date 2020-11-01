@@ -1,5 +1,20 @@
 body {
-    background: white url("../images/background.gif") repeat;
+    height: calc(100vh - 15px);
+    color: #ffffff;
+    background-size: cover;
+    background: rgb(44,45,92);
+background: linear-gradient(22deg, rgba(44,45,92,1) 0%, rgba(45,33,140,1) 32%, rgba(128,60,200,1) 73%, rgba(161,72,195,1) 100%);
+}
+
+h2 {
+    padding-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-family: Roboto Thin;
+}
+
+hr {
+    margin-top: 0.1rem;
+    margin-bottom: 1rem;
 }
 
 .headercontainer {
@@ -7,25 +22,61 @@ body {
 }
 
 .maincontainer {
-    background-color: rgba(97, 97, 97, 0.8); 
-}
-
-.aterminal {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    background-size: cover;
+    background-color: rgb(35, 35, 41); 
 }
 
 .afooter {
-    margin-top: 15px;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    background-size: cover;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+
+
+.afooter2 {
+    color: rgb(185, 185, 185);
+    margin-top: 5px;
     margin-bottom: 15px;
 }
 
+.menupanel {
+    text-align: right;
+    color: white;
+    font-family: Roboto Thin;
+    font-size: large;
+    margin-top: auto;
+    margin-bottom: auto;
+    top: 0;
+    bottom: 0;
+}
+
 .amenu {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: rgb(39, 39, 39);
+    color: white;
+    margin-right: 25px;
+    letter-spacing: 1px;
+}
+
+a:hover {
+    color: rgba(44,45,92,1);
+    text-decoration: none;
 }
 
 .apanel {
     background-color: rgb(39, 39, 39);
+}
+
+.btn-start {
+    color: white;
+    width: 50%;
+    background: linear-gradient(28deg, rgba(45,33,140,1) 0%, rgba(128,60,200,1) 100%);
+    border: 0;
+    font-family: Roboto Thin;
+    font-size: large;
+}
+
+.btn-start:hover {
+    color: white;
+    background: linear-gradient(25deg, rgba(45,33,140,1) 0%, rgb(102, 60, 200) 100%);
 }

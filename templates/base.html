@@ -23,64 +23,81 @@
     <link rel="stylesheet" href="/static/css/Chart.min.css" />
     <script src="/static/js/Chart.min.js"></script>
 
-
     <title>{% block title %}{% endblock %} - Scheduler Simulator</title>
     {% endblock %}
   </head>
   <body>
     <!-- Head/Title -->
     <div class="container headercontainer">
-      <div class="row">
-        <div class="col-sm-12">
-          <p>
+      <div class="row" style="margin-top: 15px; margin-bottom: 15px;">
+        <div class="col-sm-3">
+
             <img
-              src="/static/images/logo.png"
+              src="/static/images/s-logo.png"
               alt="Scheduler Simulator 2020"
-              height="40px"
+              height="50px"
               width="auto"
             />
-          </p>
+
+        </div>
+        <div class="col-sm-9 menupanel">
+          <a href="{{ url_for('index') }}" class="amenu" style="margin-left: 10px;"
+          >
+            Main
+          </a>
+        
+        <a href="{{ url_for('results') }}" class="amenu"
+          >
+            Results
+          </a>
+        <a href="{{ url_for('generator') }}" class="amenu" style="margin-right: 0;"
+          >
+            Dataset generator
+          </a>
         </div>
       </div>
     </div>
     <div class="container maincontainer">
-      <div class="row amenu">
-        <div class="col-sm-7">
-          <a href="{{ url_for('index') }}"
-            ><button type="button" class="btn btn-primary" id="menu-mainButton">
-              Main
-            </button></a
-          >
-          <a href="{{ url_for('results') }}"
-            ><button
-              type="button"
-              class="btn btn-primary"
-              id="menu-resultsButton"
-            >
-              Results
-            </button></a
-          >
-          <a href="{{ url_for('generator') }}"
-          ><button
-            type="button"
-            class="btn btn-primary"
-            id="menu-generatorButton"
-          >
-            Generator
-          </button></a
-        >
-        </div>
-        <div class="col-sm-5" style="text-align: right;">
-          <a href="#"
-            ><button type="button" class="btn btn-dark" id="menu-debugButton">
-              Debug
-            </button></a
-          >
-        </div>
-      </div>
       <div id="content">{% block content %}{% endblock %}</div>
     </div>
     <div class="container afooter">
+      <div id="footer">{% block footer %}{% endblock %}</div>
+      <div class="row justify-content-center" style="margin-bottom: 20px">
+        <div class="col-sm-4 text-sm-center">
+          <img
+            src="/static/images/logo-pwr.png"
+            alt="Wroclaw Univerity of Science and Technology"
+            height="50px"
+            width="auto"
+          />
+        </div>
+        <div class="col-sm-4 text-sm-center">
+          <img
+            src="/static/images/logo-eka.png"
+            alt="Faculty of Electronic"
+            height="50px"
+            width="auto"
+          />
+        </div>
+        <div class="col-sm-4 text-sm-center">
+          <img
+            style="
+              position: absolute;
+              margin: auto;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+            "
+            src="/static/images/logo-kssk.png"
+            alt="KSSK"
+            height="30px"
+            width="auto"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="container afooter2">
       <div class="row">
         <div class="col-sm-10">
           <small>&copy; {{ context.footertext }}</small>
@@ -89,7 +106,6 @@
           <small>v{{ context.appversion }}</small>
         </div>
       </div>
-      <div id="footer">{% block footer %}{% endblock %}</div>
     </div>
   </body>
 </html>
