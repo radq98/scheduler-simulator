@@ -7,39 +7,24 @@ function getRandomColor() {
         return color;
     }
 
-function clearLiveWaitingTimeChart()
+function clearAverageWaitingTimeChart()
     {
-        var startLength = liveWaitingTimeChart.data.labels.length;
+        var startLength = AverageWaitingTimeChart.data.labels.length;
         for(i=0; i<startLength; i++)
         {
-            liveWaitingTimeChart.data.labels.pop();
-            liveWaitingTimeChart.data.datasets.forEach((dataset) => {
+            AverageWaitingTimeChart.data.labels.pop();
+            AverageWaitingTimeChart.data.datasets.forEach((dataset) => {
                 dataset.data.pop();
             });
-            //liveWaitingTimeChart.update();
+            //AverageWaitingTimeChart.update();
         }
-            liveWaitingTimeChart.data.datasets = [];
-            //liveWaitingTimeChart.update();
+            AverageWaitingTimeChart.data.datasets = [];
+            //AverageWaitingTimeChart.update();
         
     }
 
-function doSamplesLimit(sampleslimit) {
-    if(sampleslimit.value!="Unlimited")
-    {
-        var maxsamples = parseInt(sampleslimit.value);
-        if (liveWaitingTimeChart.data.labels.length>maxsamples){
-            for(var i=0; i<liveWaitingTimeChart.data.datasets.length;i++) {
-                if(liveWaitingTimeChart.data.datasets[i].data.length > maxsamples) {
-                    liveWaitingTimeChart.data.datasets[i].data.shift();
-                }
-            }
-            liveWaitingTimeChart.data.labels.shift();
-            liveWaitingTimeChart.update(0);
-        }
-    }
-}
 
-var liveWaitingTimeChartConfig = {
+var AverageWaitingTimeChartConfig = {
     type: 'line',
     data: {
         datasets: [],
@@ -53,7 +38,7 @@ var liveWaitingTimeChartConfig = {
         responsive: true,
         title: {
             display: true,
-            text: 'Average waiting time',
+            text: 'Average Waiting Time',
             fontColor: '#e5e5e5'
         },
         tooltips: {
@@ -92,5 +77,5 @@ var liveWaitingTimeChartConfig = {
     }
 };
 
-var liveWaitingTimeChartContext = document.getElementById('liveWaitingTimeChartCanvas').getContext('2d');
-var liveWaitingTimeChart = new Chart(liveWaitingTimeChartContext, liveWaitingTimeChartConfig);
+var AverageWaitingTimeChartContext = document.getElementById('AverageWaitingTimeChartCanvas').getContext('2d');
+var AverageWaitingTimeChart = new Chart(AverageWaitingTimeChartContext, AverageWaitingTimeChartConfig);

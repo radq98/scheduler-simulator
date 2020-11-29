@@ -7,39 +7,24 @@ function getRandomColor() {
         return color;
     }
 
-function clearLiveWaitingTimeChart()
+function clearliveCPUusageChart()
     {
-        var startLength = liveWaitingTimeChart.data.labels.length;
+        var startLength = liveCPUusageChart.data.labels.length;
         for(i=0; i<startLength; i++)
         {
-            liveWaitingTimeChart.data.labels.pop();
-            liveWaitingTimeChart.data.datasets.forEach((dataset) => {
+            liveCPUusageChart.data.labels.pop();
+            liveCPUusageChart.data.datasets.forEach((dataset) => {
                 dataset.data.pop();
             });
-            //liveWaitingTimeChart.update();
+            //liveCPUusageChart.update();
         }
-            liveWaitingTimeChart.data.datasets = [];
-            //liveWaitingTimeChart.update();
+            liveCPUusageChart.data.datasets = [];
+            //liveCPUusageChart.update();
         
     }
 
-function doSamplesLimit(sampleslimit) {
-    if(sampleslimit.value!="Unlimited")
-    {
-        var maxsamples = parseInt(sampleslimit.value);
-        if (liveWaitingTimeChart.data.labels.length>maxsamples){
-            for(var i=0; i<liveWaitingTimeChart.data.datasets.length;i++) {
-                if(liveWaitingTimeChart.data.datasets[i].data.length > maxsamples) {
-                    liveWaitingTimeChart.data.datasets[i].data.shift();
-                }
-            }
-            liveWaitingTimeChart.data.labels.shift();
-            liveWaitingTimeChart.update(0);
-        }
-    }
-}
 
-var liveWaitingTimeChartConfig = {
+var liveCPUusageChartConfig = {
     type: 'line',
     data: {
         datasets: [],
@@ -53,7 +38,7 @@ var liveWaitingTimeChartConfig = {
         responsive: true,
         title: {
             display: true,
-            text: 'Average waiting time',
+            text: 'CPU usage [%]',
             fontColor: '#e5e5e5'
         },
         tooltips: {
@@ -84,7 +69,7 @@ var liveWaitingTimeChartConfig = {
                 display: true,
                 scaleLabel: {
                     display: true,
-                    labelString: '[time unit]',
+                    labelString: '[%]',
                     fontColor: '#e5e5e5'
                 }
             }]
@@ -92,5 +77,5 @@ var liveWaitingTimeChartConfig = {
     }
 };
 
-var liveWaitingTimeChartContext = document.getElementById('liveWaitingTimeChartCanvas').getContext('2d');
-var liveWaitingTimeChart = new Chart(liveWaitingTimeChartContext, liveWaitingTimeChartConfig);
+var liveCPUusageChartContext = document.getElementById('liveCPUusageChartCanvas').getContext('2d');
+var liveCPUusageChart = new Chart(liveCPUusageChartContext, liveCPUusageChartConfig);

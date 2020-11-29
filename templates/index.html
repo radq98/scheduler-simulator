@@ -1,8 +1,6 @@
 {% extends "base.html" %} {% block title %}Main{% endblock %} {% block head %}
 {{ super() }}
 <script src="/static/js/main.js"></script>
-  
-</style>
 {% endblock %} {% block content %}
 <h2>Main panel</h2>
 <hr style="height:3px;border-width:0; background: linear-gradient(270deg, rgba(44,45,92,1) 0%, rgba(45,33,140,1) 32%, rgba(128,60,200,1) 73%, rgba(161,72,195,1) 100%);">
@@ -97,12 +95,19 @@
   </div>
   <div class="col-sm-6 align-self-center">
     <div id="liveChartContainer" class="form-group row" style="margin-right: 1px;">
-      <canvas id="liveWaitingTimeChartCanvas" width=max height=220px
+      <canvas id="liveCPUusageChartCanvas" width=max height=120px
+        style="background-color: rgba(255, 255, 255, 0.3); margin-right: 15px;"></canvas>
+      <script src="/static/js/charts/liveCPUusage-chart.js"></script>
+
+    </div>
+    <div id="liveChartContainer" class="form-group row" style="margin-right: 1px;">
+      <canvas id="liveWaitingTimeChartCanvas" width=max height=150px
         style="background-color: rgba(255, 255, 255, 0.3); margin-right: 15px;"></canvas>
       <script src="/static/js/charts/liveWaitingTime-chart.js"></script>
 
     </div>
-    <div class="form-group row">
+
+    <div class="form-group row" hidden>
       <label for="data_streams_count" id="samples-amount-label" class="col-sm-8 col-form-label">Number of samples on
         the chart</label>
       <div class="col-sm-4">
@@ -115,7 +120,7 @@
         </select>
       </div>
     </div>
-    <div class="form-group row">
+    <div class="form-group row" hidden>
       <label for="visualization-speed" id="visualization-speed-label" class="col-sm-8 col-form-label">Visualization speed</label>
       <div class="col-sm-4">
         <select class="form-control" type="number" id="visualization-speed" name="visualization-speed" disabled>
@@ -150,13 +155,20 @@ async function delayedGreeting(data) {
   for (const element of data.values) {
           liveWaitingTimeChart.data.labels.push(element.currentTime);
           liveWaitingTimeChart.data.datasets[0].data.push(element.averageWaitingTime);
+
+          liveCPUusageChart.data.labels.push(element.currentTime);
+          CPUusagePercent = parseFloat(element.CPUusage)*100;
+          liveCPUusageChart.data.datasets[0].data.push(CPUusagePercent);
+
           if(formObjects.visualization.checked) {
             await sleep(500);
             liveWaitingTimeChart.update();
+            liveCPUusageChart.update();
             doSamplesLimit(formObjects.samplesLimit.value);
           }
         }
         liveWaitingTimeChart.update();
+        liveCPUusageChart.update();
         FormUnlock()
 }
 

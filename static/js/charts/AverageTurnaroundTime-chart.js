@@ -7,39 +7,24 @@ function getRandomColor() {
         return color;
     }
 
-function clearLiveWaitingTimeChart()
+function clearAverageTurnaroundTimeChart()
     {
-        var startLength = liveWaitingTimeChart.data.labels.length;
+        var startLength = AverageTurnaroundTimeChart.data.labels.length;
         for(i=0; i<startLength; i++)
         {
-            liveWaitingTimeChart.data.labels.pop();
-            liveWaitingTimeChart.data.datasets.forEach((dataset) => {
+            AverageTurnaroundTimeChart.data.labels.pop();
+            AverageTurnaroundTimeChart.data.datasets.forEach((dataset) => {
                 dataset.data.pop();
             });
-            //liveWaitingTimeChart.update();
+            //AverageTurnaroundTimeChart.update();
         }
-            liveWaitingTimeChart.data.datasets = [];
-            //liveWaitingTimeChart.update();
+            AverageTurnaroundTimeChart.data.datasets = [];
+            //AverageTurnaroundTimeChart.update();
         
     }
 
-function doSamplesLimit(sampleslimit) {
-    if(sampleslimit.value!="Unlimited")
-    {
-        var maxsamples = parseInt(sampleslimit.value);
-        if (liveWaitingTimeChart.data.labels.length>maxsamples){
-            for(var i=0; i<liveWaitingTimeChart.data.datasets.length;i++) {
-                if(liveWaitingTimeChart.data.datasets[i].data.length > maxsamples) {
-                    liveWaitingTimeChart.data.datasets[i].data.shift();
-                }
-            }
-            liveWaitingTimeChart.data.labels.shift();
-            liveWaitingTimeChart.update(0);
-        }
-    }
-}
 
-var liveWaitingTimeChartConfig = {
+var AverageTurnaroundTimeChartConfig = {
     type: 'line',
     data: {
         datasets: [],
@@ -53,7 +38,7 @@ var liveWaitingTimeChartConfig = {
         responsive: true,
         title: {
             display: true,
-            text: 'Average waiting time',
+            text: 'Average Turnaround Time',
             fontColor: '#e5e5e5'
         },
         tooltips: {
@@ -92,5 +77,5 @@ var liveWaitingTimeChartConfig = {
     }
 };
 
-var liveWaitingTimeChartContext = document.getElementById('liveWaitingTimeChartCanvas').getContext('2d');
-var liveWaitingTimeChart = new Chart(liveWaitingTimeChartContext, liveWaitingTimeChartConfig);
+var AverageTurnaroundTimeChartContext = document.getElementById('AverageTurnaroundTimeChartCanvas').getContext('2d');
+var AverageTurnaroundTimeChart = new Chart(AverageTurnaroundTimeChartContext, AverageTurnaroundTimeChartConfig);

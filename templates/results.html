@@ -2,19 +2,112 @@
 {% block title %}Results{% endblock %}
 {% block head %}
     {{ super() }}
-    <style type="text/css">
-        .important { color: #ff0062; }
-    </style>
+    <script src="/static/js/results.js"></script>
 {% endblock %}
 {% block content %}
     <h2>Results</h2>
     <hr style="height:3px;border-width:0; background: linear-gradient(270deg, rgba(44,45,92,1) 0%, rgba(45,33,140,1) 32%, rgba(128,60,200,1) 73%, rgba(161,72,195,1) 100%);">
     <div class="row">
-        <div class="col-sm-12">
-            <p>
-                Soon.
-            </p>
+        <div class="col-sm-4">
+            <h5>List of result datasets</h5>
+            <div class="list-group list-group-flush">
+                {% for result in context.list %}
+                <a href="?id={{ result }}"
+                  class="list-group-item list-group-item-action">{{ result }}</a>
+                {% endfor %}
+              </div>
+        </div>
+        <div class="col-sm-8" id="to-unhide" hidden>
+            <h5>Results</h5>
+            <h6>{{ context.selectedResult }}</h6>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h6>Simulation parameters</h6>
+                    <table class="table table-dark table-striped table-sm table-responsive-md" id="parameterstable1" >
+                        <thead>
+                          <tr>
+                            <th>Algorithm</th>
+                            <th>Dataset</th>
+                            <th>Dispatch latency</th>
+                            <th>Round Robin interval</th>
+                            <th>Aging priorities?</th>
+                            <th>Aging interval</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h6>Summary</h6>
+                    <table class="table table-dark table-striped table-sm table-responsive-md" id="summarytable1" >
+                        <thead>
+                          <tr>
+                            <th>Total time</th>
+                            <th>Average waiting time</th>
+                            <th>Average turnaround time</th>
+                            <th>Throughpul</th>
+                            <th>CPU usage</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 align-self-center">
+                    <h6>CPU usage chart</h6>
+                    <div id="liveChartContainer" class="form-group row" style="margin-right: 1px;">
+                        <canvas id="CPUusageChartCanvas" width=max height=200px
+                          style="background-color: rgba(255, 255, 255, 0.3); margin-right: 15px;"></canvas>
+                        <script src="/static/js/charts/CPUusage-chart.js"></script>
+                    </div>
+                </div>
+                <div class="col-md-6 align-self-center">
+                    <h6>Throuhpul chart</h6>
+                    <div id="liveChartContainer" class="form-group row" style="margin-right: 1px;">
+                        <canvas id="ThroughpulChartCanvas" width=max height=200px
+                          style="background-color: rgba(255, 255, 255, 0.3); margin-right: 15px;"></canvas>
+                        <script src="/static/js/charts/Throughpul-chart.js"></script>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 align-self-center">
+                    <h6>Average waiting time chart</h6>
+                    <div id="liveChartContainer" class="form-group row" style="margin-right: 1px;">
+                        <canvas id="AverageWaitingTimeChartCanvas" width=max height=200px
+                          style="background-color: rgba(255, 255, 255, 0.3); margin-right: 15px;"></canvas>
+                        <script src="/static/js/charts/AverageWaitingTime-chart.js"></script>
+                    </div>
+                </div>
+                <div class="col-md-6 align-self-center">
+                    <h6>Average turnaround time chart</h6>
+                    <div id="liveChartContainer" class="form-group row" style="margin-right: 1px;">
+                        <canvas id="AverageTurnaroundTimeChartCanvas" width=max height=200px
+                          style="background-color: rgba(255, 255, 255, 0.3); margin-right: 15px;"></canvas>
+                        <script src="/static/js/charts/AverageTurnaroundTime-chart.js"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-8" id="to-hide">
+            <div style="text-align: center; margin-bottom: 50px;">
+                <p>
+                  <img src="/static/images/waiting.gif" alt="Please wait..." height=150px width=auto>
+                </p>
+                {% if context.data.settings == null %}
+                <h4>Please select result!</h4>
+                {% elif context.data.settings != null %}
+                <h4>Loading...</h4>
+                {% endif %}
+              </div>
         </div>
     </div>
-    
+    <script>
+        var JSONdata = '{{ context.data|tojson }}';
+    </script>
 {% endblock %}

@@ -53,9 +53,10 @@ $(document).ready(function () {
     $('#start-button').on('click', function (event) {
         console.log("Begin test");
         clearLiveWaitingTimeChart();
+        clearliveCPUusageChart();
         var color = getRandomColor();
         var newDataset = {
-            label: "Dataset 1",
+            label: "Waiting Time",
             data: [],
             backgroundColor: color,
             borderColor: color,
@@ -63,6 +64,17 @@ $(document).ready(function () {
         };
         liveWaitingTimeChart.data.datasets.push(newDataset);
         liveWaitingTimeChart.update();
+        var color = getRandomColor();
+        var newDataset = {
+            label: "CPU usage",
+            data: [],
+            backgroundColor: color,
+            borderColor: color,
+            fill: false
+        };
+        liveCPUusageChart.data.datasets.push(newDataset);
+        liveCPUusageChart.update;
+
         if (formObjects.visualization.checked) {
             FormLock();
         }

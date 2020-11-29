@@ -45,16 +45,19 @@ def get_results():
     def newStep(time, eventType, PID):
         return {"time": time, "eventType": eventType, "PID": PID}
     
-    def newValue(currentTime, toProcessCount, processedCount, queueList, processingList, processedList, averageWaitingTime, CPUusage):
+    def newValue(currentTime, toProcessCount, processedCount, queueList, processingList, processedList, averageWaitingTime, averageTurnaroundTime, throughpul, CPUusage):
         return {"currentTime": currentTime, 
         "toProcessCount": toProcessCount, 
         "processedCount": processedCount, 
         "queueList": queueList, 
         "processingList": processingList, 
         "processedList": processedList, 
-        "averageWaitingTime": averageWaitingTime, 
-        "CPUusage": CPUusage}
+        "averageWaitingTime": round(averageWaitingTime,3), 
+        "averageTurnaroundTime": round(averageTurnaroundTime,3),
+        "throughpul": round(throughpul, 3),
+        "CPUusage": round(CPUusage, 3)}
     currentTime = 0
+    currentProcess = None
     toProcessCount = dataset['settings']['numberOfProcesses']
     processedCount = 0
     queueList = dataset['data']
@@ -62,7 +65,10 @@ def get_results():
     #adding necessary parameters to process objects
     for x in queueList:
         x["waitingTime"] = 0
+        x["turnaroundTime"] = 0
     averageWaitingTime = 0
+    averageTurnaroundTime = 0
+    throughpul = 0
     CPUusage = 0
     timeWithTasks = 0
     timeWithoutTasks = 0
@@ -71,25 +77,28 @@ def get_results():
     processedList = []
     toRemoveFromQueue = []
     steps.append(newStep(currentTime, "simulation-start", None))
-    values.append(newValue("start", toProcessCount, processedCount, queueList.copy(), processingList.copy(), processedList.copy(), averageWaitingTime, CPUusage))
+    values.append(newValue("start", toProcessCount, processedCount, queueList.copy(), processingList.copy(), processedList.copy(), averageWaitingTime, averageTurnaroundTime, throughpul, CPUusage))
     
     dispatching = False
     currentDispatchTime = 0
+
+    processShiftLock = False
+
     
     if simulationSettings["algorithm"] == "Round Robin":
         rrCurrent = 0
         rrIntervalControl = int(simulationSettings["rrInterval"])
 
     while toProcessCount > 0:
-        print("currentTime " + str(currentTime))
-        print("queueList " + str(len(queueList)))
-        print("processingList " + str(len(processingList)))
-        print("processedList " + str(len(processedList)))
-        print("toProcessCount " + str(toProcessCount))
-        print(steps[-1])
-        if len(processingList) > 0:
-            print("processingList[-1]['period-time'] " + str(processingList[-1]['period-time']))
-        print(" ")
+       # print("currentTime " + str(currentTime))
+       # print("queueList " + str(len(queueList)))
+       # print("processingList " + str(len(processingList)))
+       # print("processedList " + str(len(processedList)))
+       # print("toProcessCount " + str(toProcessCount))
+       # print(steps[-1])
+       # if len(processingList) > 0:
+       #     print("processingList[-1]['period-time'] " + str(processingList[-1]['period-time']))
+       # print(" ")
         for x in queueList:
             if int(x['arrive-time']) == int(currentTime):
                 processingList.append(x.copy())
@@ -104,10 +113,13 @@ def get_results():
             
         if (len(processingList) > 0) and (dispatching == False):
             timeWithTasks += 1
-            if simulationSettings["algorithm"] == "FCFS":
+            for x in processingList:
+                x['turnaroundTime'] += 1
+            if simulationSettings["algorithm"] == "FCFS":   
+                currentProcess = processingList[0]
                 if len(processingList) > 1:
                     for x in processingList:
-                        if x != processingList[0]:
+                        if x != currentProcess:
                             x['waitingTime'] += 1
                 steps.append(newStep(currentTime, "processing", str(processingList[0]['PID'])))
                 processingList[0]['period-time'] -= 1
@@ -124,9 +136,10 @@ def get_results():
                     currentTime += 1
             
             elif simulationSettings["algorithm"] == "Round Robin":    
+                currentProcess = processingList[rrCurrent]
                 if len(processingList) > 1:
                     for x in processingList:
-                        if x != processingList[rrCurrent]:
+                        if x != currentProcess:
                             x['waitingTime'] += 1
                 steps.append(newStep(currentTime, "processing", str(processingList[rrCurrent]['PID'])))
                 processingList[rrCurrent]['period-time'] -= 1
@@ -154,7 +167,37 @@ def get_results():
                     currentTime += 1
             
             elif simulationSettings["algorithm"] == "Priority planning":
-                print("Not yet PP")
+                if processShiftLock == False:
+                    maxPriorityProcessId=0
+                    maxPriority=9999999
+                    for x in processingList:
+                        if(x["priority"]<maxPriority):
+                            maxPriority = x["priority"]
+                            maxPriorityProcessId = processingList.index(x)
+                            print("maxPriority: " + str(maxPriority))
+                            print("maxPriorityProcessId: " + str(maxPriorityProcessId))
+                    processShiftLock = True
+                currentProcess = processingList[maxPriorityProcessId]
+                if len(processingList) > 1:
+                    for x in processingList:
+                        if x != currentProcess:
+                            x['waitingTime'] += 1
+                steps.append(newStep(currentTime, "processing", str(processingList[maxPriorityProcessId]['PID'])))
+
+                processingList[maxPriorityProcessId]['period-time'] -= 1
+
+                if processingList[maxPriorityProcessId]['period-time'] == 0:
+                    processedList.append(processingList[maxPriorityProcessId].copy())
+                    steps.append(newStep(currentTime, "finished", str(processingList[maxPriorityProcessId]['PID'])))
+                    processingList.pop(maxPriorityProcessId)
+                    toProcessCount -= 1
+                    processedCount += 1
+                    processShiftLock = False
+                    if (len(processingList) >= 1) and (simulationSettings['dispatchLatency'] > 0):
+                        dispatching = True
+                        currentDispatchTime = simulationSettings['dispatchLatency']
+                if toProcessCount>0:
+                    currentTime += 1
             if(simulationSettings['dispatchLatency'] == 0):
                 dispatching = False
         else:
@@ -174,20 +217,26 @@ def get_results():
             currentTime += 1
         
         CPUusage = timeWithTasks / (timeWithTasks + timeWithoutTasks)
-        #tu jest na pewno blad w liczeniu average len processingList sie zmienia
-        averageSum = 0
+        averageWaitingTimeSum = 0
+        averageTurnaroundTimeSum = 0
         for x in processingList:
-            averageSum += int(x["waitingTime"])
+            averageWaitingTimeSum += int(x["waitingTime"])
+            averageTurnaroundTimeSum += int(x["turnaroundTime"])
         for x in processedList:
-            averageSum += int(x["waitingTime"])
+            averageWaitingTimeSum += int(x["waitingTime"])
+            averageTurnaroundTimeSum += int(x["turnaroundTime"])
         if (len(processingList) + len(processedList)) != 0:
-            averageWaitingTime = averageSum / (len(processingList) + len(processedList))
+            averageWaitingTime = averageWaitingTimeSum / (len(processingList) + len(processedList))
+            averageTurnaroundTime = averageTurnaroundTimeSum / (len(processingList) + len(processedList))
         else:
             averageWaitingTime = 0
-        values.append(newValue(currentTime, toProcessCount, processedCount, queueList.copy(), processingList.copy(), processedList.copy(), averageWaitingTime, CPUusage))  
-    
+        
+        throughpul = len(processedList)/currentTime
+
+        values.append(newValue(currentTime, toProcessCount, processedCount, queueList.copy(), processingList.copy(), processedList.copy(), averageWaitingTime, averageTurnaroundTime, throughpul, CPUusage))  
+
     steps.append(newStep(currentTime, "simulation-finished", None))
-    values.append(newValue("finished", toProcessCount, processedCount, queueList.copy(), processingList.copy(), processedList.copy(), averageWaitingTime, CPUusage))
+    values.append(newValue("finished", toProcessCount, processedCount, queueList.copy(), processingList.copy(), processedList.copy(), averageWaitingTime, averageTurnaroundTime, throughpul, CPUusage))
     results = {
         "settings": simulationSettings,
         "steps": steps,
@@ -217,9 +266,29 @@ def index():
 
 @app.route("/results")
 def results():
+    list = os.listdir("./results/")
+    selectedResult = None
+    data = None
+
+    arg = request.args
+
+    if request.method == "GET":
+        if(arg.get("id") == None):
+            selectedResult = None
+        else: 
+            selectedResult = arg.get("id")
+            with open("./results/" + selectedResult, "r") as f:
+                data = json.load(f)
+        
+        
+
+
     context = {
         "appversion": appversion,
         "footertext": footertext,
+        "list": list,
+        "selectedResult": selectedResult,
+        "data": data
     }
     return render_template("results.html", context=context)
 
@@ -241,7 +310,6 @@ def generator():
             "maximumProcessDuration": int(form.get("maximum-process-duration")),
             "processDispersionFactor": int(form.get("process-dispersion-factor")),
             "randomizePriority": bool(form.get("randomize-priority")),
-            # "randomSeed": int(form.get("random-seed")),
             "numberOfPriorityLevels": int(form.get("number-of-priority-levels"))
         }
         newDataset['settings'] = datasetSettings
