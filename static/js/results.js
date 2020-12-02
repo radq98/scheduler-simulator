@@ -21,19 +21,19 @@ $(document).ready(function () {
         else {
             $('#parameterstable1 > tbody:last-child').append('<td>Disabled</td>');
         }
-        if (data.settings.rrInterval != "") {
+        if (data.settings.rrInterval != null) {
             $('#parameterstable1 > tbody:last-child').append('<td>' + data.settings.rrInterval + '</td>');
         }
         else {
             $('#parameterstable1 > tbody:last-child').append('<td>---</td>');
         }
-        if (data.settings.agingPriorities == "true") {
+        if (data.settings.agingPriorities == true) {
             $('#parameterstable1 > tbody:last-child').append('<td>Enabled</td>');
         }
         else {
             $('#parameterstable1 > tbody:last-child').append('<td>Disabled</td>');
         }
-        if (data.settings.ppAgingInterval != "") {
+        if (data.settings.ppAgingInterval != null) {
             $('#parameterstable1 > tbody:last-child').append('<td>' + data.settings.ppAgingInterval + '</td>');
         }
         else {
@@ -60,7 +60,42 @@ $(document).ready(function () {
             $('#summarytable1 > tbody:last-child').append('<td>' + data.values[data.values.length-1].CPUusage + '</td>');
         }
 
-        $('#parameterstable1 > tbody:last-child').append('</tr>');
+        $('#psummarytable1 > tbody:last-child').append('</tr>');
+    }
+    function loadDataToStepsTable() {
+        var iterate = 1;
+        
+        for (var step of data.steps)
+        {
+            console.log(step);
+            $('#stepstable1 > tbody:last-child').append('<tr>');
+            $('#stepstable1 > tbody:last-child').append('<td>' + iterate + '</td>');
+            iterate = iterate + 1;
+            if (step.time != "") {
+                $('#stepstable1 > tbody:last-child').append('<td>' + step.time + '</td>');
+            }
+            else {
+                $('#stepstable1 > tbody:last-child').append('<td>---</td>');
+            }
+            if (step.PID != null) {
+                $('#stepstable1 > tbody:last-child').append('<td>' + step.PID + '</td>');
+            }
+            else {
+                $('#stepstable1 > tbody:last-child').append('<td>---</td>');
+            }
+            if (step.eventType != "") {
+                $('#stepstable1 > tbody:last-child').append('<td>' + step.eventType + '</td>');
+            }
+            else {
+                $('#stepstable1 > tbody:last-child').append('<td>---</td>');
+            }
+
+            $('#stepstable1 > tbody:last-child').append('</tr>');
+        }
+
+       
+
+        
     }
     function loadDataToCPUusageChart() {
         clearCPUusageChart();
@@ -146,6 +181,7 @@ $(document).ready(function () {
             loadDataToThroughpulChart();
             loadDataToAverageWaitingTimeChart();
             loadDataToAverageTurnaroundTimeChart();
+            loadDataToStepsTable()
             toHide.hidden = true;
             toUnhide.hidden = false;
             $('body').css('height', 'auto');

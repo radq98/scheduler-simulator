@@ -29,9 +29,9 @@ def get_results():
         "algorithm": request.args.get('algorithm', None, type=str),
         "dataset": request.args.get('dataset', None, type=str),
         "visualization": request.args.get('visualization', None, type=str),
-        "rrInterval": request.args.get('rrInterval', None, type=str),
-        "agingPriorities": request.args.get('agingPriorities', None, type=str),
-        "ppAgingInterval": request.args.get('ppAgingInterval', None, type=str),
+        "rrInterval": request.args.get('rrInterval', None, type=int),
+        "agingPriorities": request.args.get('agingPriorities', None, type=bool),
+        "ppAgingInterval": request.args.get('ppAgingInterval', None, type=int),
         "dispatchLatency": request.args.get('dispatchLatency', None, type=int)
     }
     dataset = None
@@ -66,6 +66,7 @@ def get_results():
     for x in queueList:
         x["waitingTime"] = 0
         x["turnaroundTime"] = 0
+        x["toAgingTime"] = 0
     averageWaitingTime = 0
     averageTurnaroundTime = 0
     throughpul = 0
@@ -182,6 +183,13 @@ def get_results():
                     for x in processingList:
                         if x != currentProcess:
                             x['waitingTime'] += 1
+                        if (simulationSettings["agingPriorities"]==True) and (x['priority']>1):
+                            if (x['toAgingTime'] < simulationSettings["ppAgingInterval"]):
+                                x['toAgingTime'] += 1
+                                if x['toAgingTime'] == simulationSettings["ppAgingInterval"]:
+                                    x['toAgingTime'] = 0
+                                    x['priority'] -= 1
+                                    steps.append(newStep(currentTime, "priority-up", str(x['PID'])))
                 steps.append(newStep(currentTime, "processing", str(processingList[maxPriorityProcessId]['PID'])))
 
                 processingList[maxPriorityProcessId]['period-time'] -= 1
